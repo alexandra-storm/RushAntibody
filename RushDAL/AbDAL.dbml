@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="matchit" Class="AbDALDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ALEXWIN7\EVOLUTION;Initial Catalog=matchit;User ID=evosa" SettingsObjectName="RushDAL.Properties.Settings" SettingsPropertyName="matchitConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tbAntibodyMethod" Member="tbAntibodyMethods">
+    <Type Name="tbAntibodyMethod">
+      <Column Name="AntibodyID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="lotID" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="sessionID" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="sampleID" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="logicID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="wellLocation" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="raw" Type="System.Decimal" DbType="Decimal(12,4)" CanBeNull="true" />
+      <Column Name="rVal" Type="System.Decimal" DbType="Decimal(12,4)" CanBeNull="true" />
+      <Column Name="pctPositive" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="assignCutoff" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="assignAdjust1" Type="System.Decimal" DbType="Decimal(12,4)" CanBeNull="true" />
+      <Column Name="assignAdjust2" Type="System.Decimal" DbType="Decimal(12,4)" CanBeNull="true" />
+      <Column Name="assignAdjust3" Type="System.Decimal" DbType="Decimal(12,4)" CanBeNull="true" />
+      <Column Name="tail" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="runDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="comments" Type="System.String" DbType="NVarChar(1024)" CanBeNull="true" />
+      <Column Name="includeweak" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="reviewer" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="reviewerDt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="createdt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="updatedt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="updateby" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="manualAssignFlg" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ctrlSampleFailed" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="lockedFlg" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="approved" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="useVBAF" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="negativeCtrl" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="pra" Type="System.Decimal" DbType="Decimal(12,4)" CanBeNull="true" />
+      <Column Name="virtualPra" Type="System.Decimal" DbType="Decimal(12,4)" CanBeNull="true" />
+      <Column Name="CalcUsed" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="completed" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="completedBy" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="approvedBy" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="maskedAntigens" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ApprovedDt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CompletedDt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="useMFICutoff" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="MFICutoffValue" Type="System.Decimal" DbType="Decimal(12,4)" CanBeNull="true" />
+      <Column Name="ID4DigitLogicID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="adjAltCalc1" Type="System.Decimal" DbType="Decimal(12,4)" CanBeNull="true" />
+      <Column Name="adjAltCalc2" Type="System.Decimal" DbType="Decimal(12,4)" CanBeNull="true" />
+      <Column Name="TailLogicID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="excludeweak" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Version" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.GetSampleForLoad" Method="GetSampleForLoad">
+    <Parameter Name="batchID" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="sampleID" Type="System.String" DbType="VarChar(30)" />
+    <ElementType Name="GetSampleForLoadResult">
+      <Column Name="sessionID" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="sampleID" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="bead" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="rawValue" Type="System.Decimal" DbType="Decimal(12,4)" CanBeNull="true" />
+      <Column Name="adjust1" Type="System.Decimal" DbType="Decimal(12,4)" CanBeNull="true" />
+      <Column Name="adjust2" Type="System.Decimal" DbType="Decimal(12,4)" CanBeNull="true" />
+      <Column Name="adjust3" Type="System.Decimal" DbType="Decimal(12,4)" CanBeNull="true" />
+      <Column Name="adjustN" Type="System.Decimal" DbType="Decimal(12,4)" CanBeNull="true" />
+      <Column Name="assignment" Type="System.String" DbType="NVarChar(12)" CanBeNull="true" />
+      <Column Name="test_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="hiBGAdjust1" Type="System.Decimal" DbType="Decimal(12,4)" CanBeNull="true" />
+      <Column Name="hiBGAdjust2" Type="System.Decimal" DbType="Decimal(12,4)" CanBeNull="true" />
+      <Column Name="hiBGAdjust3" Type="System.Decimal" DbType="Decimal(12,4)" CanBeNull="true" />
+      <Column Name="hiBGAssignment" Type="System.String" DbType="NVarChar(12)" CanBeNull="true" />
+      <Column Name="weakPct" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="overRide" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="beadCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="score" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="hiBGScore" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="consensus" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Column Name="ProgressBarValue" Type="System.Decimal" DbType="Decimal(35,19)" CanBeNull="true" />
+      <Column Name="Adj1ProgressBarValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Adj2ProgressBarValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Adj3ProgressBarValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AdjNProgressBarValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EpitopeCol" Type="System.String" DbType="VarChar(4000)" CanBeNull="true" />
+      <Column Name="AlleleA1Col" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="AlleleA2Col" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="AlleleB1Col" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="AlleleB2Col" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="AlleleBw4Col" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="AlleleBw6Col" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="AlleleC1Col" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="AlleleC2Col" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="AlleleDR1Col" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="AlleleDR2Col" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="AlleleDR5x1Col" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="AlleleDR5x2Col" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="AlleleDQB1Col" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="AlleleDQB2Col" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="HighlightMe" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDirty" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Con3" Type="System.Decimal" DbType="Decimal(12,4)" CanBeNull="true" />
+      <Column Name="AlleleDQA1Col" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="AlleleDQA2Col" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="AlleleDPB1Col" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="AlleleDPB2Col" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="DonorID" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

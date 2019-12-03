@@ -1,0 +1,45 @@
+﻿<Window x:Class="WixSetupUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WixSetupUI"
+             mc:Ignorable="d" Width="407" Height="244" ResizeMode="NoResize" Title="MATCH IT! RUSH Export Utility Setup" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" Icon="Resources/setup.ico">
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+    </Window.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Margin="50,65,50,0" FontSize="18" FontFamily="Tahoma" HorizontalAlignment="Center" Foreground="Black" VerticalAlignment="Top" TextAlignment="Center"><Run Text="MATCH IT! RUSH Export Utility"/><LineBreak/><Run Text="v1.0"/></TextBlock>
+        <StackPanel Margin="0,98,0,40" VerticalAlignment="Bottom">
+            <TextBlock x:Name="uxTxtMessages" Text="{Binding CurrentActionName}" Visibility="{Binding IsRunning, Converter={StaticResource BooleanToVisibilityConverter}}" Margin="34,20,34,0"  />            
+            <ProgressBar x:Name="uxProgressBar"
+                         Maximum="{Binding ProgressTotal}"
+                         Visibility="{Binding IsRunning, Converter={StaticResource BooleanToVisibilityConverter}}"
+                         Value="{Binding ProgressCurrentPosition,Mode=OneWay}" Margin="34,0,34,5" Height="12" />
+        </StackPanel>
+        <TextBlock x:Name="errorMessages" Text="{Binding ErrorStatus}" TextAlignment="Right" Foreground="{Binding TextColor}" Margin="34,135,34,55" />
+        <TextBlock
+                   Margin="0,0,10,40"
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Bottom"
+                   Cursor="Hand"
+                   FontWeight="Bold"
+                   MouseLeftButtonDown="ShowLog_MouseLeftButtonDown"
+                   Text="Show Log"
+                   TextDecorations="Underline"
+                   Visibility="{Binding HasError, Converter={StaticResource BooleanToVisibilityConverter}}"
+            />
+
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Right">
+            <Button Name="uxBtInstall" IsEnabled="{Binding CanInstall}" Visibility="{Binding InitialCanInstall, Converter={StaticResource BooleanToVisibilityConverter}}" Margin="10" Height="20" Width="80" Click="Install_Click">Install</Button>
+            <Button Name="uxBtUninstall" IsEnabled="{Binding CanUnInstall}" Visibility="{Binding InitialCanUnInstall, Converter={StaticResource BooleanToVisibilityConverter}}" Margin="10" Height="20" Width="80" Click="Uninstall_Click">Uninstall</Button>
+            <Button Name ="uxBtnCancel" Margin="10" Height="20" Width="80" Visibility="{Binding IsRunning, Converter={StaticResource BooleanToVisibilityConverter}}" Click="Cancel_Click">Cancel</Button>
+            <Button Name="uxBtnExit" Margin="10" Height="20" Width="80" Visibility="{Binding NotStarted, Converter={StaticResource BooleanToVisibilityConverter}}" Click="Exit_Click">Exit</Button>
+        </StackPanel>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="48" Margin="10,7,10,0" VerticalAlignment="Top" Width="158" Source="Resources/ImmucorLogo.png"/>
+    </Grid>
+</Window>

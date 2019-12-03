@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Settings>
+  <reportPath>c:</reportPath>
+  <highrange>5000</highrange>
+  <midrange>2000-5000</midrange>
+  <lowrange>700-2000</lowrange>
+  <unacceptable>3500</unacceptable>
+</Settings>

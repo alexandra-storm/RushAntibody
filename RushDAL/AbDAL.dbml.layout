@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 10.25" name="AbDAL">
+  <DataContextMoniker Name="/AbDALDataContext" />
+  <nestedChildShapes>
+    <classShape Id="4e329953-632c-4338-964f-3fba6d8893ce" absoluteBounds="0.625, 0.5, 2, 9.4629541015625">
+      <DataClassMoniker Name="/AbDALDataContext/tbAntibodyMethod" />
+      <nestedChildShapes>
+        <elementListCompartment Id="373d453e-9f9a-46cb-b99c-a9c274ec655f" absoluteBounds="0.64000000000000012, 0.96, 1.9700000000000002, 8.9029541015625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
