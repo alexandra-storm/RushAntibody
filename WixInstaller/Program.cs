@@ -18,7 +18,7 @@ namespace WixInstaller
         static string BuildMsi()
         {
             //Source for file to be installed
-            string sRootDir = @"J:\MATCHITAntibodyRushExport\WixInstaller\PublishedFiles";
+            string sRootDir = @"J:\MATCHITAntibodyRushExport\RushAntibody\WixInstaller\PublishedFiles";
             // Install Path
             string installPath = @"%ProgramFiles%\LIFECODES\MATCH IT! RUSH Export Utility";
 
@@ -63,7 +63,7 @@ namespace WixInstaller
             Compiler.PreserveTempFiles = true;
 
             // Output path for MSI file.
-            return project.BuildMsi(@"J:\MATCHITAntibodyRushExport\WixSetupUI\Resources\MATCHITRUSH_Export_UtilitySetup.msi");
+            return project.BuildMsi(@"J:\MATCHITAntibodyRushExport\RushAntibody\WixSetupUI\Resources\MATCHITRUSH_Export_UtilitySetup.msi");
         }
 
         /// <summary>

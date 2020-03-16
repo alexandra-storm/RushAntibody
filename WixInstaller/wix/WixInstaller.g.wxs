@@ -6,7 +6,7 @@
 </auto-generated>
 -->
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-  <Product Id="e5f05aad-114f-4f43-9e6f-c60d3796092a" Name="MATCH IT! RUSH Export Utility" Language="1033" Codepage="Windows-1252" Version="1.0.0" UpgradeCode="3ffda3aa-0053-4072-9d00-42416389e47a" Manufacturer="Immucor, Inc.">
+  <Product Id="1731873b-9202-4149-b4e8-e2bb9bbc1361" Name="MATCH IT! RUSH Export Utility" Language="1033" Codepage="Windows-1252" Version="1.0.0" UpgradeCode="3ffda3aa-0053-4072-9d00-42416389e47a" Manufacturer="Immucor, Inc.">
     <Package InstallerVersion="200" Compressed="yes" Platform="x86" SummaryCodepage="Windows-1252" Languages="1033" InstallScope="perMachine" />
     <Media Id="1" Cabinet="MATCHITRUSH_Export_Utility.cab" EmbedCab="yes" />
 
@@ -15,147 +15,147 @@
         <Directory Id="ProgramFilesFolder.LIFECODES" Name="LIFECODES">
           <Directory Id="INSTALLDIR" Name="MATCH IT! RUSH Export Utility">
 
-            <Component Id="Component._...vExpress.Charts.v18.2.Core.dll" Guid="e5f05aad-114f-4f43-9e6f-c60de0f1f51d">
+            <Component Id="Component._...vExpress.Charts.v18.2.Core.dll" Guid="1731873b-9202-4149-b4e8-e2bb4417ff54">
               <File Id="_...vExpress.Charts.v18.2.Core.dll" Source="PublishedFiles\DevExpress.Charts.v18.2.Core.dll" />
             </Component>
 
-            <Component Id="Component._...evExpress.CodeParser.v18.2.dll" Guid="e5f05aad-114f-4f43-9e6f-c60db1acceea">
+            <Component Id="Component._...evExpress.CodeParser.v18.2.dll" Guid="1731873b-9202-4149-b4e8-e2bb15d2d821">
               <File Id="_...evExpress.CodeParser.v18.2.dll" Source="PublishedFiles\DevExpress.CodeParser.v18.2.dll" />
             </Component>
 
-            <Component Id="Component.DevExpress.Data.v18.2.dll" Guid="e5f05aad-114f-4f43-9e6f-c60daaf80883">
+            <Component Id="Component.DevExpress.Data.v18.2.dll" Guid="1731873b-9202-4149-b4e8-e2bb0e1e12ba">
               <File Id="DevExpress.Data.v18.2.dll" Source="PublishedFiles\DevExpress.Data.v18.2.dll" />
             </Component>
 
-            <Component Id="Component._...evExpress.DataAccess.v18.2.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d4e8f9583">
+            <Component Id="Component._...evExpress.DataAccess.v18.2.dll" Guid="1731873b-9202-4149-b4e8-e2bbb2b59fba">
               <File Id="_...evExpress.DataAccess.v18.2.dll" Source="PublishedFiles\DevExpress.DataAccess.v18.2.dll" />
             </Component>
 
-            <Component Id="Component._...xpress.DataAccess.v18.2.UI.dll" Guid="e5f05aad-114f-4f43-9e6f-c60df0ba9012">
+            <Component Id="Component._...xpress.DataAccess.v18.2.UI.dll" Guid="1731873b-9202-4149-b4e8-e2bb54e09a49">
               <File Id="_...xpress.DataAccess.v18.2.UI.dll" Source="PublishedFiles\DevExpress.DataAccess.v18.2.UI.dll" />
             </Component>
 
-            <Component Id="Component._...Express.Diagram.v18.2.Core.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d8a3d4a77">
+            <Component Id="Component._...Express.Diagram.v18.2.Core.dll" Guid="1731873b-9202-4149-b4e8-e2bbee6354ae">
               <File Id="_...Express.Diagram.v18.2.Core.dll" Source="PublishedFiles\DevExpress.Diagram.v18.2.Core.dll" />
             </Component>
 
-            <Component Id="Component.DevExpress.Images.v18.2.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d3944032f">
+            <Component Id="Component.DevExpress.Images.v18.2.dll" Guid="1731873b-9202-4149-b4e8-e2bb9d6a0d66">
               <File Id="DevExpress.Images.v18.2.dll" Source="PublishedFiles\DevExpress.Images.v18.2.dll" />
             </Component>
 
-            <Component Id="Component._...vExpress.Office.v18.2.Core.dll" Guid="e5f05aad-114f-4f43-9e6f-c60dcf65939c">
+            <Component Id="Component._...vExpress.Office.v18.2.Core.dll" Guid="1731873b-9202-4149-b4e8-e2bb338b9dd3">
               <File Id="_...vExpress.Office.v18.2.Core.dll" Source="PublishedFiles\DevExpress.Office.v18.2.Core.dll" />
             </Component>
 
-            <Component Id="Component.DevExpress.Pdf.v18.2.Core.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d3d2f8c85">
+            <Component Id="Component.DevExpress.Pdf.v18.2.Core.dll" Guid="1731873b-9202-4149-b4e8-e2bba15596bc">
               <File Id="DevExpress.Pdf.v18.2.Core.dll" Source="PublishedFiles\DevExpress.Pdf.v18.2.Core.dll" />
             </Component>
 
-            <Component Id="Component._...press.PivotGrid.v18.2.Core.dll" Guid="e5f05aad-114f-4f43-9e6f-c60dc80330bd">
+            <Component Id="Component._...press.PivotGrid.v18.2.Core.dll" Guid="1731873b-9202-4149-b4e8-e2bb2c293af4">
               <File Id="_...press.PivotGrid.v18.2.Core.dll" Source="PublishedFiles\DevExpress.PivotGrid.v18.2.Core.dll" />
             </Component>
 
-            <Component Id="Component._...xpress.Printing.v18.2.Core.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d497e95cd">
+            <Component Id="Component._...xpress.Printing.v18.2.Core.dll" Guid="1731873b-9202-4149-b4e8-e2bbada49f04">
               <File Id="_...xpress.Printing.v18.2.Core.dll" Source="PublishedFiles\DevExpress.Printing.v18.2.Core.dll" />
             </Component>
 
-            <Component Id="Component._...xpress.RichEdit.v18.2.Core.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d5ecdf706">
+            <Component Id="Component._...xpress.RichEdit.v18.2.Core.dll" Guid="1731873b-9202-4149-b4e8-e2bbc2f3013d">
               <File Id="_...xpress.RichEdit.v18.2.Core.dll" Source="PublishedFiles\DevExpress.RichEdit.v18.2.Core.dll" />
             </Component>
 
-            <Component Id="Component._...ress.RichEdit.v18.2.Export.dll" Guid="e5f05aad-114f-4f43-9e6f-c60de215b8da">
+            <Component Id="Component._...ress.RichEdit.v18.2.Export.dll" Guid="1731873b-9202-4149-b4e8-e2bb463bc211">
               <File Id="_...ress.RichEdit.v18.2.Export.dll" Source="PublishedFiles\DevExpress.RichEdit.v18.2.Export.dll" />
             </Component>
 
-            <Component Id="Component._...press.Sparkline.v18.2.Core.dll" Guid="e5f05aad-114f-4f43-9e6f-c60df1663c5f">
+            <Component Id="Component._...press.Sparkline.v18.2.Core.dll" Guid="1731873b-9202-4149-b4e8-e2bb558c4696">
               <File Id="_...press.Sparkline.v18.2.Core.dll" Source="PublishedFiles\DevExpress.Sparkline.v18.2.Core.dll" />
             </Component>
 
-            <Component Id="Component.DevExpress.Utils.v18.2.dll" Guid="e5f05aad-114f-4f43-9e6f-c60dbe6d1b18">
+            <Component Id="Component.DevExpress.Utils.v18.2.dll" Guid="1731873b-9202-4149-b4e8-e2bb2293254f">
               <File Id="DevExpress.Utils.v18.2.dll" Source="PublishedFiles\DevExpress.Utils.v18.2.dll" />
             </Component>
 
-            <Component Id="Component.DevExpress.Utils.v18.2.UI.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d69a89f1d">
+            <Component Id="Component.DevExpress.Utils.v18.2.UI.dll" Guid="1731873b-9202-4149-b4e8-e2bbcdcea954">
               <File Id="DevExpress.Utils.v18.2.UI.dll" Source="PublishedFiles\DevExpress.Utils.v18.2.UI.dll" />
             </Component>
 
-            <Component Id="Component.DevExpress.Xpo.v18.2.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d9a8b16c3">
+            <Component Id="Component.DevExpress.Xpo.v18.2.dll" Guid="1731873b-9202-4149-b4e8-e2bbfeb120fa">
               <File Id="DevExpress.Xpo.v18.2.dll" Source="PublishedFiles\DevExpress.Xpo.v18.2.dll" />
             </Component>
 
-            <Component Id="Component.DevExpress.XtraBars.v18.2.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d7d3d5308">
+            <Component Id="Component.DevExpress.XtraBars.v18.2.dll" Guid="1731873b-9202-4149-b4e8-e2bbe1635d3f">
               <File Id="DevExpress.XtraBars.v18.2.dll" Source="PublishedFiles\DevExpress.XtraBars.v18.2.dll" />
             </Component>
 
-            <Component Id="Component._...evExpress.XtraCharts.v18.2.dll" Guid="e5f05aad-114f-4f43-9e6f-c60da66d33c7">
+            <Component Id="Component._...evExpress.XtraCharts.v18.2.dll" Guid="1731873b-9202-4149-b4e8-e2bb0a933dfe">
               <File Id="_...evExpress.XtraCharts.v18.2.dll" Source="PublishedFiles\DevExpress.XtraCharts.v18.2.dll" />
             </Component>
 
-            <Component Id="Component._...traCharts.v18.2.Extensions.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d6958dff3">
+            <Component Id="Component._...traCharts.v18.2.Extensions.dll" Guid="1731873b-9202-4149-b4e8-e2bbcd7ee92a">
               <File Id="_...traCharts.v18.2.Extensions.dll" Source="PublishedFiles\DevExpress.XtraCharts.v18.2.Extensions.dll" />
             </Component>
 
-            <Component Id="Component._...ss.XtraCharts.v18.2.Wizard.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d713904af">
+            <Component Id="Component._...ss.XtraCharts.v18.2.Wizard.dll" Guid="1731873b-9202-4149-b4e8-e2bbd55f0ee6">
               <File Id="_...ss.XtraCharts.v18.2.Wizard.dll" Source="PublishedFiles\DevExpress.XtraCharts.v18.2.Wizard.dll" />
             </Component>
 
-            <Component Id="Component._...vExpress.XtraDiagram.v18.2.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d47240319">
+            <Component Id="Component._...vExpress.XtraDiagram.v18.2.dll" Guid="1731873b-9202-4149-b4e8-e2bbab4a0d50">
               <File Id="_...vExpress.XtraDiagram.v18.2.dll" Source="PublishedFiles\DevExpress.XtraDiagram.v18.2.dll" />
             </Component>
 
-            <Component Id="Component._...vExpress.XtraEditors.v18.2.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d477f99fa">
+            <Component Id="Component._...vExpress.XtraEditors.v18.2.dll" Guid="1731873b-9202-4149-b4e8-e2bbaba5a331">
               <File Id="_...vExpress.XtraEditors.v18.2.dll" Source="PublishedFiles\DevExpress.XtraEditors.v18.2.dll" />
             </Component>
 
-            <Component Id="Component._...ress.XtraGauges.v18.2.Core.dll" Guid="e5f05aad-114f-4f43-9e6f-c60de18407a2">
+            <Component Id="Component._...ress.XtraGauges.v18.2.Core.dll" Guid="1731873b-9202-4149-b4e8-e2bb45aa11d9">
               <File Id="_...ress.XtraGauges.v18.2.Core.dll" Source="PublishedFiles\DevExpress.XtraGauges.v18.2.Core.dll" />
             </Component>
 
-            <Component Id="Component.DevExpress.XtraGrid.v18.2.dll" Guid="e5f05aad-114f-4f43-9e6f-c60df263977c">
+            <Component Id="Component.DevExpress.XtraGrid.v18.2.dll" Guid="1731873b-9202-4149-b4e8-e2bb5689a1b3">
               <File Id="DevExpress.XtraGrid.v18.2.dll" Source="PublishedFiles\DevExpress.XtraGrid.v18.2.dll" />
             </Component>
 
-            <Component Id="Component._...evExpress.XtraLayout.v18.2.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d5a72074e">
+            <Component Id="Component._...evExpress.XtraLayout.v18.2.dll" Guid="1731873b-9202-4149-b4e8-e2bbbe981185">
               <File Id="_...evExpress.XtraLayout.v18.2.dll" Source="PublishedFiles\DevExpress.XtraLayout.v18.2.dll" />
             </Component>
 
-            <Component Id="Component._...evExpress.XtraNavBar.v18.2.dll" Guid="e5f05aad-114f-4f43-9e6f-c60ddfbf84ab">
+            <Component Id="Component._...evExpress.XtraNavBar.v18.2.dll" Guid="1731873b-9202-4149-b4e8-e2bb43e58ee2">
               <File Id="_...evExpress.XtraNavBar.v18.2.dll" Source="PublishedFiles\DevExpress.XtraNavBar.v18.2.dll" />
             </Component>
 
-            <Component Id="Component._...xpress.XtraPivotGrid.v18.2.dll" Guid="e5f05aad-114f-4f43-9e6f-c60dcf8e2cf5">
+            <Component Id="Component._...xpress.XtraPivotGrid.v18.2.dll" Guid="1731873b-9202-4149-b4e8-e2bb33b4362c">
               <File Id="_...xpress.XtraPivotGrid.v18.2.dll" Source="PublishedFiles\DevExpress.XtraPivotGrid.v18.2.dll" />
             </Component>
 
-            <Component Id="Component._...Express.XtraPrinting.v18.2.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d0125ed29">
+            <Component Id="Component._...Express.XtraPrinting.v18.2.dll" Guid="1731873b-9202-4149-b4e8-e2bb654bf760">
               <File Id="_...Express.XtraPrinting.v18.2.dll" Source="PublishedFiles\DevExpress.XtraPrinting.v18.2.dll" />
             </Component>
 
-            <Component Id="Component._...vExpress.XtraReports.v18.2.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d0d658eff">
+            <Component Id="Component._...vExpress.XtraReports.v18.2.dll" Guid="1731873b-9202-4149-b4e8-e2bb718b9836">
               <File Id="_...vExpress.XtraReports.v18.2.dll" Source="PublishedFiles\DevExpress.XtraReports.v18.2.dll" />
             </Component>
 
-            <Component Id="Component._...raReports.v18.2.Extensions.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d5f073979">
+            <Component Id="Component._...raReports.v18.2.Extensions.dll" Guid="1731873b-9202-4149-b4e8-e2bbc32d43b0">
               <File Id="_...raReports.v18.2.Extensions.dll" Source="PublishedFiles\DevExpress.XtraReports.v18.2.Extensions.dll" />
             </Component>
 
-            <Component Id="Component._...Express.XtraRichEdit.v18.2.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d47b9bac3">
+            <Component Id="Component._...Express.XtraRichEdit.v18.2.dll" Guid="1731873b-9202-4149-b4e8-e2bbabdfc4fa">
               <File Id="_...Express.XtraRichEdit.v18.2.dll" Source="PublishedFiles\DevExpress.XtraRichEdit.v18.2.dll" />
             </Component>
 
-            <Component Id="Component._...Express.XtraTreeList.v18.2.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d4ed07e42">
+            <Component Id="Component._...Express.XtraTreeList.v18.2.dll" Guid="1731873b-9202-4149-b4e8-e2bbb2f68879">
               <File Id="_...Express.XtraTreeList.v18.2.dll" Source="PublishedFiles\DevExpress.XtraTreeList.v18.2.dll" />
             </Component>
 
-            <Component Id="Component._...ess.XtraVerticalGrid.v18.2.dll" Guid="e5f05aad-114f-4f43-9e6f-c60dca087309">
+            <Component Id="Component._...ess.XtraVerticalGrid.v18.2.dll" Guid="1731873b-9202-4149-b4e8-e2bb2e2e7d40">
               <File Id="_...ess.XtraVerticalGrid.v18.2.dll" Source="PublishedFiles\DevExpress.XtraVerticalGrid.v18.2.dll" />
             </Component>
 
-            <Component Id="Component.EvolutionDBFacade.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d8ba1614a">
+            <Component Id="Component.EvolutionDBFacade.dll" Guid="1731873b-9202-4149-b4e8-e2bbefc76b81">
               <File Id="EvolutionDBFacade.dll" Source="PublishedFiles\EvolutionDBFacade.dll" />
             </Component>
 
-            <Component Id="Component.MATCHITAntibodyRushExport.exe" Guid="e5f05aad-114f-4f43-9e6f-c60dda712ffc">
+            <Component Id="Component.MATCHITAntibodyRushExport.exe" Guid="1731873b-9202-4149-b4e8-e2bb3e973933">
               <File Id="MATCHITAntibodyRushExport.exe" Source="PublishedFiles\MATCHITAntibodyRushExport.exe">
                 <Shortcut Id="Shortcut.MATCHITAntibodyRushExport.exe.MATCH_IT__RUSH_Export_Utility" WorkingDirectory="Shortcut.MATCHITAntibodyRushExport.exe.MATCH_IT__RUSH_Export_Utility.WorkDir" Directory="ProgramMenuFolder.Lifecodes" Name="MATCH IT! RUSH Export Utility.lnk" />
                 <Shortcut Id="Shortcut.MATCHITAntibodyRushExport.exe.MATCH_IT__RUSH_Export_Utility.1" WorkingDirectory="Shortcut.MATCHITAntibodyRushExport.exe.MATCH_IT__RUSH_Export_Utility.1.WorkDir" Directory="DesktopFolder" Name="MATCH IT! RUSH Export Utility.lnk" />
@@ -166,157 +166,165 @@
               </RegistryKey>
             </Component>
 
-            <Component Id="Component._...TAntibodyRushExport.exe.config" Guid="e5f05aad-114f-4f43-9e6f-c60d0c81d687">
+            <Component Id="Component._...TAntibodyRushExport.exe.config" Guid="1731873b-9202-4149-b4e8-e2bb70a7e0be">
               <File Id="_...TAntibodyRushExport.exe.config" Source="PublishedFiles\MATCHITAntibodyRushExport.exe.config" />
             </Component>
 
-            <Component Id="Component._...s.EnterpriseLibrary.Common.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d8aa471b2">
+            <Component Id="Component._...s.EnterpriseLibrary.Common.dll" Guid="1731873b-9202-4149-b4e8-e2bbeeca7be9">
               <File Id="_...s.EnterpriseLibrary.Common.dll" Source="PublishedFiles\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
             </Component>
 
-            <Component Id="Component._...ces.EnterpriseLibrary.Data.dll" Guid="e5f05aad-114f-4f43-9e6f-c60dd6e277b5">
+            <Component Id="Component._...ces.EnterpriseLibrary.Data.dll" Guid="1731873b-9202-4149-b4e8-e2bb3a0881ec">
               <File Id="_...ces.EnterpriseLibrary.Data.dll" Source="PublishedFiles\Microsoft.Practices.EnterpriseLibrary.Data.dll" />
             </Component>
 
-            <Component Id="Component._...eLibrary.ExceptionHandling.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d9fdc492f">
+            <Component Id="Component._...eLibrary.ExceptionHandling.dll" Guid="1731873b-9202-4149-b4e8-e2bb03025366">
               <File Id="_...eLibrary.ExceptionHandling.dll" Source="PublishedFiles\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll" />
             </Component>
 
-            <Component Id="Component._...t.Practices.ObjectBuilder2.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d5324a888">
+            <Component Id="Component._...t.Practices.ObjectBuilder2.dll" Guid="1731873b-9202-4149-b4e8-e2bbb74ab2bf">
               <File Id="_...t.Practices.ObjectBuilder2.dll" Source="PublishedFiles\Microsoft.Practices.ObjectBuilder2.dll" />
             </Component>
 
-            <Component Id="Component.Microsoft.Practices.Unity.dll" Guid="e5f05aad-114f-4f43-9e6f-c60def7c22ef">
+            <Component Id="Component.Microsoft.Practices.Unity.dll" Guid="1731873b-9202-4149-b4e8-e2bb53a22c26">
               <File Id="Microsoft.Practices.Unity.dll" Source="PublishedFiles\Microsoft.Practices.Unity.dll" />
             </Component>
 
-            <Component Id="Component.Newtonsoft.Json.dll" Guid="e5f05aad-114f-4f43-9e6f-c60db5f07405">
+            <Component Id="Component.Newtonsoft.Json.dll" Guid="1731873b-9202-4149-b4e8-e2bb19167e3c">
               <File Id="Newtonsoft.Json.dll" Source="PublishedFiles\Newtonsoft.Json.dll" />
             </Component>
 
-            <Component Id="Component.RushDAL.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d6392ce9d">
+            <Component Id="Component.RushDAL.dll" Guid="1731873b-9202-4149-b4e8-e2bbc7b8d8d4">
               <File Id="RushDAL.dll" Source="PublishedFiles\RushDAL.dll" />
             </Component>
 
-            <Component Id="Component.RUSHSettings.xml" Guid="e5f05aad-114f-4f43-9e6f-c60d70f0b155">
+            <Component Id="Component.RushDAL.dll.config" Guid="1731873b-9202-4149-b4e8-e2bbfc571782">
+              <File Id="RushDAL.dll.config" Source="PublishedFiles\RushDAL.dll.config" />
+            </Component>
+
+            <Component Id="Component.RUSHSettings.xml" Guid="1731873b-9202-4149-b4e8-e2bbd416bb8c">
               <File Id="RUSHSettings.xml" Source="PublishedFiles\RUSHSettings.xml" />
             </Component>
 
-            <Component Id="Component.RushViewModel.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d70f23038">
+            <Component Id="Component.RushViewModel.dll" Guid="1731873b-9202-4149-b4e8-e2bbd4183a6f">
               <File Id="RushViewModel.dll" Source="PublishedFiles\RushViewModel.dll" />
+            </Component>
+
+            <Component Id="Component.RushViewModel.dll.config" Guid="1731873b-9202-4149-b4e8-e2bbd13d982d">
+              <File Id="RushViewModel.dll.config" Source="PublishedFiles\RushViewModel.dll.config" />
             </Component>
 
             <Directory Id="INSTALLDIR.de" Name="de">
 
-              <Component Id="Component._...press.Data.v18.2.resources.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d4daa5c76">
+              <Component Id="Component._...press.Data.v18.2.resources.dll" Guid="1731873b-9202-4149-b4e8-e2bbb1d066ad">
                 <File Id="_...press.Data.v18.2.resources.dll" Source="PublishedFiles\de\DevExpress.Data.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...DataAccess.v18.2.resources.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d01f1a45f">
+              <Component Id="Component._...DataAccess.v18.2.resources.dll" Guid="1731873b-9202-4149-b4e8-e2bb6517ae96">
                 <File Id="_...DataAccess.v18.2.resources.dll" Source="PublishedFiles\de\DevExpress.DataAccess.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...aAccess.v18.2.UI.resources.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d0c9a4f78">
+              <Component Id="Component._...aAccess.v18.2.UI.resources.dll" Guid="1731873b-9202-4149-b4e8-e2bb70c059af">
                 <File Id="_...aAccess.v18.2.UI.resources.dll" Source="PublishedFiles\de\DevExpress.DataAccess.v18.2.UI.resources.dll" />
               </Component>
 
-              <Component Id="Component._...agram.v18.2.Core.resources.dll" Guid="e5f05aad-114f-4f43-9e6f-c60dc48897d0">
+              <Component Id="Component._...agram.v18.2.Core.resources.dll" Guid="1731873b-9202-4149-b4e8-e2bb28aea107">
                 <File Id="_...agram.v18.2.Core.resources.dll" Source="PublishedFiles\de\DevExpress.Diagram.v18.2.Core.resources.dll" />
               </Component>
 
-              <Component Id="Component._...ffice.v18.2.Core.resources.dll" Guid="e5f05aad-114f-4f43-9e6f-c60daa4f37dd">
+              <Component Id="Component._...ffice.v18.2.Core.resources.dll" Guid="1731873b-9202-4149-b4e8-e2bb0e754114">
                 <File Id="_...ffice.v18.2.Core.resources.dll" Source="PublishedFiles\de\DevExpress.Office.v18.2.Core.resources.dll" />
               </Component>
 
-              <Component Id="Component._...s.Pdf.v18.2.Core.resources.dll" Guid="e5f05aad-114f-4f43-9e6f-c60de3d9fb93">
+              <Component Id="Component._...s.Pdf.v18.2.Core.resources.dll" Guid="1731873b-9202-4149-b4e8-e2bb47ff05ca">
                 <File Id="_...s.Pdf.v18.2.Core.resources.dll" Source="PublishedFiles\de\DevExpress.Pdf.v18.2.Core.resources.dll" />
               </Component>
 
-              <Component Id="Component._...tGrid.v18.2.Core.resources.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d82c12328">
+              <Component Id="Component._...tGrid.v18.2.Core.resources.dll" Guid="1731873b-9202-4149-b4e8-e2bbe6e72d5f">
                 <File Id="_...tGrid.v18.2.Core.resources.dll" Source="PublishedFiles\de\DevExpress.PivotGrid.v18.2.Core.resources.dll" />
               </Component>
 
-              <Component Id="Component._...nting.v18.2.Core.resources.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d302c1b3c">
+              <Component Id="Component._...nting.v18.2.Core.resources.dll" Guid="1731873b-9202-4149-b4e8-e2bb94522573">
                 <File Id="_...nting.v18.2.Core.resources.dll" Source="PublishedFiles\de\DevExpress.Printing.v18.2.Core.resources.dll" />
               </Component>
 
-              <Component Id="Component._...hEdit.v18.2.Core.resources.dll" Guid="e5f05aad-114f-4f43-9e6f-c60dfc608bb1">
+              <Component Id="Component._...hEdit.v18.2.Core.resources.dll" Guid="1731873b-9202-4149-b4e8-e2bb608695e8">
                 <File Id="_...hEdit.v18.2.Core.resources.dll" Source="PublishedFiles\de\DevExpress.RichEdit.v18.2.Core.resources.dll" />
               </Component>
 
-              <Component Id="Component._...kline.v18.2.Core.resources.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d70edf393">
+              <Component Id="Component._...kline.v18.2.Core.resources.dll" Guid="1731873b-9202-4149-b4e8-e2bbd413fdca">
                 <File Id="_...kline.v18.2.Core.resources.dll" Source="PublishedFiles\de\DevExpress.Sparkline.v18.2.Core.resources.dll" />
               </Component>
 
-              <Component Id="Component._...ress.Utils.v18.2.resources.dll" Guid="e5f05aad-114f-4f43-9e6f-c60dcbe9a6d2">
+              <Component Id="Component._...ress.Utils.v18.2.resources.dll" Guid="1731873b-9202-4149-b4e8-e2bb2f0fb009">
                 <File Id="_...ress.Utils.v18.2.resources.dll" Source="PublishedFiles\de\DevExpress.Utils.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...s.Utils.v18.2.UI.resources.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d5d8e850f">
+              <Component Id="Component._...s.Utils.v18.2.UI.resources.dll" Guid="1731873b-9202-4149-b4e8-e2bbc1b48f46">
                 <File Id="_...s.Utils.v18.2.UI.resources.dll" Source="PublishedFiles\de\DevExpress.Utils.v18.2.UI.resources.dll" />
               </Component>
 
-              <Component Id="Component._...xpress.Xpo.v18.2.resources.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d60a825bd">
+              <Component Id="Component._...xpress.Xpo.v18.2.resources.dll" Guid="1731873b-9202-4149-b4e8-e2bbc4ce2ff4">
                 <File Id="_...xpress.Xpo.v18.2.resources.dll" Source="PublishedFiles\de\DevExpress.Xpo.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...s.XtraBars.v18.2.resources.dll" Guid="e5f05aad-114f-4f43-9e6f-c60da9e26848">
+              <Component Id="Component._...s.XtraBars.v18.2.resources.dll" Guid="1731873b-9202-4149-b4e8-e2bb0d08727f">
                 <File Id="_...s.XtraBars.v18.2.resources.dll" Source="PublishedFiles\de\DevExpress.XtraBars.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...XtraCharts.v18.2.resources.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d488c2c23">
+              <Component Id="Component._...XtraCharts.v18.2.resources.dll" Guid="1731873b-9202-4149-b4e8-e2bbacb2365a">
                 <File Id="_...XtraCharts.v18.2.resources.dll" Source="PublishedFiles\de\DevExpress.XtraCharts.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...rts.v18.2.Wizard.resources.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d4899adfb">
+              <Component Id="Component._...rts.v18.2.Wizard.resources.dll" Guid="1731873b-9202-4149-b4e8-e2bbacbfb732">
                 <File Id="_...rts.v18.2.Wizard.resources.dll" Source="PublishedFiles\de\DevExpress.XtraCharts.v18.2.Wizard.resources.dll" />
               </Component>
 
-              <Component Id="Component._...traEditors.v18.2.resources.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d5a3a746f">
+              <Component Id="Component._...traEditors.v18.2.resources.dll" Guid="1731873b-9202-4149-b4e8-e2bbbe607ea6">
                 <File Id="_...traEditors.v18.2.resources.dll" Source="PublishedFiles\de\DevExpress.XtraEditors.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...auges.v18.2.Core.resources.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d8f7e17cb">
+              <Component Id="Component._...auges.v18.2.Core.resources.dll" Guid="1731873b-9202-4149-b4e8-e2bbf3a42102">
                 <File Id="_...auges.v18.2.Core.resources.dll" Source="PublishedFiles\de\DevExpress.XtraGauges.v18.2.Core.resources.dll" />
               </Component>
 
-              <Component Id="Component._...s.XtraGrid.v18.2.resources.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d9102ff5c">
+              <Component Id="Component._...s.XtraGrid.v18.2.resources.dll" Guid="1731873b-9202-4149-b4e8-e2bbf5280993">
                 <File Id="_...s.XtraGrid.v18.2.resources.dll" Source="PublishedFiles\de\DevExpress.XtraGrid.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...XtraLayout.v18.2.resources.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d3f5d61eb">
+              <Component Id="Component._...XtraLayout.v18.2.resources.dll" Guid="1731873b-9202-4149-b4e8-e2bba3836b22">
                 <File Id="_...XtraLayout.v18.2.resources.dll" Source="PublishedFiles\de\DevExpress.XtraLayout.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...XtraNavBar.v18.2.resources.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d943451ce">
+              <Component Id="Component._...XtraNavBar.v18.2.resources.dll" Guid="1731873b-9202-4149-b4e8-e2bbf85a5b05">
                 <File Id="_...XtraNavBar.v18.2.resources.dll" Source="PublishedFiles\de\DevExpress.XtraNavBar.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...aPivotGrid.v18.2.resources.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d1b8af50f">
+              <Component Id="Component._...aPivotGrid.v18.2.resources.dll" Guid="1731873b-9202-4149-b4e8-e2bb7fb0ff46">
                 <File Id="_...aPivotGrid.v18.2.resources.dll" Source="PublishedFiles\de\DevExpress.XtraPivotGrid.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...raPrinting.v18.2.resources.dll" Guid="e5f05aad-114f-4f43-9e6f-c60dbeb0d71f">
+              <Component Id="Component._...raPrinting.v18.2.resources.dll" Guid="1731873b-9202-4149-b4e8-e2bb22d6e156">
                 <File Id="_...raPrinting.v18.2.resources.dll" Source="PublishedFiles\de\DevExpress.XtraPrinting.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...v18.2.Extensions.resources.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d3db32e44">
+              <Component Id="Component._...v18.2.Extensions.resources.dll" Guid="1731873b-9202-4149-b4e8-e2bba1d9387b">
                 <File Id="_...v18.2.Extensions.resources.dll" Source="PublishedFiles\de\DevExpress.XtraReports.v18.2.Extensions.resources.dll" />
               </Component>
 
-              <Component Id="Component._...traReports.v18.2.resources.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d200043f0">
+              <Component Id="Component._...traReports.v18.2.resources.dll" Guid="1731873b-9202-4149-b4e8-e2bb84264d27">
                 <File Id="_...traReports.v18.2.resources.dll" Source="PublishedFiles\de\DevExpress.XtraReports.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...raRichEdit.v18.2.resources.dll" Guid="e5f05aad-114f-4f43-9e6f-c60dc33c6aee">
+              <Component Id="Component._...raRichEdit.v18.2.resources.dll" Guid="1731873b-9202-4149-b4e8-e2bb27627425">
                 <File Id="_...raRichEdit.v18.2.resources.dll" Source="PublishedFiles\de\DevExpress.XtraRichEdit.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...raTreeList.v18.2.resources.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d2a160329">
+              <Component Id="Component._...raTreeList.v18.2.resources.dll" Guid="1731873b-9202-4149-b4e8-e2bb8e3c0d60">
                 <File Id="_...raTreeList.v18.2.resources.dll" Source="PublishedFiles\de\DevExpress.XtraTreeList.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...rticalGrid.v18.2.resources.dll" Guid="e5f05aad-114f-4f43-9e6f-c60d64034ac8">
+              <Component Id="Component._...rticalGrid.v18.2.resources.dll" Guid="1731873b-9202-4149-b4e8-e2bbc82954ff">
                 <File Id="_...rticalGrid.v18.2.resources.dll" Source="PublishedFiles\de\DevExpress.XtraVerticalGrid.v18.2.resources.dll" />
               </Component>
 
@@ -324,115 +332,115 @@
 
             <Directory Id="INSTALLDIR.es" Name="es">
 
-              <Component Id="Component._...press.Data.v18.2.resources.dll.1" Guid="e5f05aad-114f-4f43-9e6f-c60d14d7d612">
+              <Component Id="Component._...press.Data.v18.2.resources.dll.1" Guid="1731873b-9202-4149-b4e8-e2bb78fde049">
                 <File Id="_...press.Data.v18.2.resources.dll.1" Source="PublishedFiles\es\DevExpress.Data.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...DataAccess.v18.2.resources.dll.1" Guid="e5f05aad-114f-4f43-9e6f-c60d9c53d44e">
+              <Component Id="Component._...DataAccess.v18.2.resources.dll.1" Guid="1731873b-9202-4149-b4e8-e2bb0079de85">
                 <File Id="_...DataAccess.v18.2.resources.dll.1" Source="PublishedFiles\es\DevExpress.DataAccess.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...aAccess.v18.2.UI.resources.dll.1" Guid="e5f05aad-114f-4f43-9e6f-c60d3ffb0014">
+              <Component Id="Component._...aAccess.v18.2.UI.resources.dll.1" Guid="1731873b-9202-4149-b4e8-e2bba3210a4b">
                 <File Id="_...aAccess.v18.2.UI.resources.dll.1" Source="PublishedFiles\es\DevExpress.DataAccess.v18.2.UI.resources.dll" />
               </Component>
 
-              <Component Id="Component._...agram.v18.2.Core.resources.dll.1" Guid="e5f05aad-114f-4f43-9e6f-c60dce75f08a">
+              <Component Id="Component._...agram.v18.2.Core.resources.dll.1" Guid="1731873b-9202-4149-b4e8-e2bb329bfac1">
                 <File Id="_...agram.v18.2.Core.resources.dll.1" Source="PublishedFiles\es\DevExpress.Diagram.v18.2.Core.resources.dll" />
               </Component>
 
-              <Component Id="Component._...ffice.v18.2.Core.resources.dll.1" Guid="e5f05aad-114f-4f43-9e6f-c60dd4b78065">
+              <Component Id="Component._...ffice.v18.2.Core.resources.dll.1" Guid="1731873b-9202-4149-b4e8-e2bb38dd8a9c">
                 <File Id="_...ffice.v18.2.Core.resources.dll.1" Source="PublishedFiles\es\DevExpress.Office.v18.2.Core.resources.dll" />
               </Component>
 
-              <Component Id="Component._...s.Pdf.v18.2.Core.resources.dll.1" Guid="e5f05aad-114f-4f43-9e6f-c60d0f69a178">
+              <Component Id="Component._...s.Pdf.v18.2.Core.resources.dll.1" Guid="1731873b-9202-4149-b4e8-e2bb738fabaf">
                 <File Id="_...s.Pdf.v18.2.Core.resources.dll.1" Source="PublishedFiles\es\DevExpress.Pdf.v18.2.Core.resources.dll" />
               </Component>
 
-              <Component Id="Component._...tGrid.v18.2.Core.resources.dll.1" Guid="e5f05aad-114f-4f43-9e6f-c60dbaf18076">
+              <Component Id="Component._...tGrid.v18.2.Core.resources.dll.1" Guid="1731873b-9202-4149-b4e8-e2bb1e178aad">
                 <File Id="_...tGrid.v18.2.Core.resources.dll.1" Source="PublishedFiles\es\DevExpress.PivotGrid.v18.2.Core.resources.dll" />
               </Component>
 
-              <Component Id="Component._...nting.v18.2.Core.resources.dll.1" Guid="e5f05aad-114f-4f43-9e6f-c60da807ec9f">
+              <Component Id="Component._...nting.v18.2.Core.resources.dll.1" Guid="1731873b-9202-4149-b4e8-e2bb0c2df6d6">
                 <File Id="_...nting.v18.2.Core.resources.dll.1" Source="PublishedFiles\es\DevExpress.Printing.v18.2.Core.resources.dll" />
               </Component>
 
-              <Component Id="Component._...hEdit.v18.2.Core.resources.dll.1" Guid="e5f05aad-114f-4f43-9e6f-c60d1e077ee7">
+              <Component Id="Component._...hEdit.v18.2.Core.resources.dll.1" Guid="1731873b-9202-4149-b4e8-e2bb822d881e">
                 <File Id="_...hEdit.v18.2.Core.resources.dll.1" Source="PublishedFiles\es\DevExpress.RichEdit.v18.2.Core.resources.dll" />
               </Component>
 
-              <Component Id="Component._...kline.v18.2.Core.resources.dll.1" Guid="e5f05aad-114f-4f43-9e6f-c60de8c9c4f6">
+              <Component Id="Component._...kline.v18.2.Core.resources.dll.1" Guid="1731873b-9202-4149-b4e8-e2bb4cefce2d">
                 <File Id="_...kline.v18.2.Core.resources.dll.1" Source="PublishedFiles\es\DevExpress.Sparkline.v18.2.Core.resources.dll" />
               </Component>
 
-              <Component Id="Component._...ress.Utils.v18.2.resources.dll.1" Guid="e5f05aad-114f-4f43-9e6f-c60ddbf90bf2">
+              <Component Id="Component._...ress.Utils.v18.2.resources.dll.1" Guid="1731873b-9202-4149-b4e8-e2bb3f1f1529">
                 <File Id="_...ress.Utils.v18.2.resources.dll.1" Source="PublishedFiles\es\DevExpress.Utils.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...s.Utils.v18.2.UI.resources.dll.1" Guid="e5f05aad-114f-4f43-9e6f-c60d31a39eeb">
+              <Component Id="Component._...s.Utils.v18.2.UI.resources.dll.1" Guid="1731873b-9202-4149-b4e8-e2bb95c9a822">
                 <File Id="_...s.Utils.v18.2.UI.resources.dll.1" Source="PublishedFiles\es\DevExpress.Utils.v18.2.UI.resources.dll" />
               </Component>
 
-              <Component Id="Component._...xpress.Xpo.v18.2.resources.dll.1" Guid="e5f05aad-114f-4f43-9e6f-c60d8f04990d">
+              <Component Id="Component._...xpress.Xpo.v18.2.resources.dll.1" Guid="1731873b-9202-4149-b4e8-e2bbf32aa344">
                 <File Id="_...xpress.Xpo.v18.2.resources.dll.1" Source="PublishedFiles\es\DevExpress.Xpo.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...s.XtraBars.v18.2.resources.dll.1" Guid="e5f05aad-114f-4f43-9e6f-c60d172646f7">
+              <Component Id="Component._...s.XtraBars.v18.2.resources.dll.1" Guid="1731873b-9202-4149-b4e8-e2bb7b4c502e">
                 <File Id="_...s.XtraBars.v18.2.resources.dll.1" Source="PublishedFiles\es\DevExpress.XtraBars.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...XtraCharts.v18.2.resources.dll.1" Guid="e5f05aad-114f-4f43-9e6f-c60daf844433">
+              <Component Id="Component._...XtraCharts.v18.2.resources.dll.1" Guid="1731873b-9202-4149-b4e8-e2bb13aa4e6a">
                 <File Id="_...XtraCharts.v18.2.resources.dll.1" Source="PublishedFiles\es\DevExpress.XtraCharts.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...rts.v18.2.Wizard.resources.dll.1" Guid="e5f05aad-114f-4f43-9e6f-c60dad8c1edb">
+              <Component Id="Component._...rts.v18.2.Wizard.resources.dll.1" Guid="1731873b-9202-4149-b4e8-e2bb11b22812">
                 <File Id="_...rts.v18.2.Wizard.resources.dll.1" Source="PublishedFiles\es\DevExpress.XtraCharts.v18.2.Wizard.resources.dll" />
               </Component>
 
-              <Component Id="Component._...traEditors.v18.2.resources.dll.1" Guid="e5f05aad-114f-4f43-9e6f-c60dde842231">
+              <Component Id="Component._...traEditors.v18.2.resources.dll.1" Guid="1731873b-9202-4149-b4e8-e2bb42aa2c68">
                 <File Id="_...traEditors.v18.2.resources.dll.1" Source="PublishedFiles\es\DevExpress.XtraEditors.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...auges.v18.2.Core.resources.dll.1" Guid="e5f05aad-114f-4f43-9e6f-c60d47e6d037">
+              <Component Id="Component._...auges.v18.2.Core.resources.dll.1" Guid="1731873b-9202-4149-b4e8-e2bbab0cda6e">
                 <File Id="_...auges.v18.2.Core.resources.dll.1" Source="PublishedFiles\es\DevExpress.XtraGauges.v18.2.Core.resources.dll" />
               </Component>
 
-              <Component Id="Component._...s.XtraGrid.v18.2.resources.dll.1" Guid="e5f05aad-114f-4f43-9e6f-c60dc668566c">
+              <Component Id="Component._...s.XtraGrid.v18.2.resources.dll.1" Guid="1731873b-9202-4149-b4e8-e2bb2a8e60a3">
                 <File Id="_...s.XtraGrid.v18.2.resources.dll.1" Source="PublishedFiles\es\DevExpress.XtraGrid.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...XtraLayout.v18.2.resources.dll.1" Guid="e5f05aad-114f-4f43-9e6f-c60d64cbb6ab">
+              <Component Id="Component._...XtraLayout.v18.2.resources.dll.1" Guid="1731873b-9202-4149-b4e8-e2bbc8f1c0e2">
                 <File Id="_...XtraLayout.v18.2.resources.dll.1" Source="PublishedFiles\es\DevExpress.XtraLayout.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...XtraNavBar.v18.2.resources.dll.1" Guid="e5f05aad-114f-4f43-9e6f-c60dbf22d2e9">
+              <Component Id="Component._...XtraNavBar.v18.2.resources.dll.1" Guid="1731873b-9202-4149-b4e8-e2bb2348dc20">
                 <File Id="_...XtraNavBar.v18.2.resources.dll.1" Source="PublishedFiles\es\DevExpress.XtraNavBar.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...aPivotGrid.v18.2.resources.dll.1" Guid="e5f05aad-114f-4f43-9e6f-c60d5a3e3f13">
+              <Component Id="Component._...aPivotGrid.v18.2.resources.dll.1" Guid="1731873b-9202-4149-b4e8-e2bbbe64494a">
                 <File Id="_...aPivotGrid.v18.2.resources.dll.1" Source="PublishedFiles\es\DevExpress.XtraPivotGrid.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...raPrinting.v18.2.resources.dll.1" Guid="e5f05aad-114f-4f43-9e6f-c60d687ed08c">
+              <Component Id="Component._...raPrinting.v18.2.resources.dll.1" Guid="1731873b-9202-4149-b4e8-e2bbcca4dac3">
                 <File Id="_...raPrinting.v18.2.resources.dll.1" Source="PublishedFiles\es\DevExpress.XtraPrinting.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...v18.2.Extensions.resources.dll.1" Guid="e5f05aad-114f-4f43-9e6f-c60dae841849">
+              <Component Id="Component._...v18.2.Extensions.resources.dll.1" Guid="1731873b-9202-4149-b4e8-e2bb12aa2280">
                 <File Id="_...v18.2.Extensions.resources.dll.1" Source="PublishedFiles\es\DevExpress.XtraReports.v18.2.Extensions.resources.dll" />
               </Component>
 
-              <Component Id="Component._...traReports.v18.2.resources.dll.1" Guid="e5f05aad-114f-4f43-9e6f-c60dc4283c5e">
+              <Component Id="Component._...traReports.v18.2.resources.dll.1" Guid="1731873b-9202-4149-b4e8-e2bb284e4695">
                 <File Id="_...traReports.v18.2.resources.dll.1" Source="PublishedFiles\es\DevExpress.XtraReports.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...raRichEdit.v18.2.resources.dll.1" Guid="e5f05aad-114f-4f43-9e6f-c60d36311b64">
+              <Component Id="Component._...raRichEdit.v18.2.resources.dll.1" Guid="1731873b-9202-4149-b4e8-e2bb9a57259b">
                 <File Id="_...raRichEdit.v18.2.resources.dll.1" Source="PublishedFiles\es\DevExpress.XtraRichEdit.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...raTreeList.v18.2.resources.dll.1" Guid="e5f05aad-114f-4f43-9e6f-c60d2e4d60b0">
+              <Component Id="Component._...raTreeList.v18.2.resources.dll.1" Guid="1731873b-9202-4149-b4e8-e2bb92736ae7">
                 <File Id="_...raTreeList.v18.2.resources.dll.1" Source="PublishedFiles\es\DevExpress.XtraTreeList.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...rticalGrid.v18.2.resources.dll.1" Guid="e5f05aad-114f-4f43-9e6f-c60d41b47425">
+              <Component Id="Component._...rticalGrid.v18.2.resources.dll.1" Guid="1731873b-9202-4149-b4e8-e2bba5da7e5c">
                 <File Id="_...rticalGrid.v18.2.resources.dll.1" Source="PublishedFiles\es\DevExpress.XtraVerticalGrid.v18.2.resources.dll" />
               </Component>
 
@@ -440,115 +448,115 @@
 
             <Directory Id="INSTALLDIR.ja" Name="ja">
 
-              <Component Id="Component._...press.Data.v18.2.resources.dll.2" Guid="e5f05aad-114f-4f43-9e6f-c60d14d6d612">
+              <Component Id="Component._...press.Data.v18.2.resources.dll.2" Guid="1731873b-9202-4149-b4e8-e2bb78fce049">
                 <File Id="_...press.Data.v18.2.resources.dll.2" Source="PublishedFiles\ja\DevExpress.Data.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...DataAccess.v18.2.resources.dll.2" Guid="e5f05aad-114f-4f43-9e6f-c60d9c50d44e">
+              <Component Id="Component._...DataAccess.v18.2.resources.dll.2" Guid="1731873b-9202-4149-b4e8-e2bb0076de85">
                 <File Id="_...DataAccess.v18.2.resources.dll.2" Source="PublishedFiles\ja\DevExpress.DataAccess.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...aAccess.v18.2.UI.resources.dll.2" Guid="e5f05aad-114f-4f43-9e6f-c60d3ffa0014">
+              <Component Id="Component._...aAccess.v18.2.UI.resources.dll.2" Guid="1731873b-9202-4149-b4e8-e2bba3200a4b">
                 <File Id="_...aAccess.v18.2.UI.resources.dll.2" Source="PublishedFiles\ja\DevExpress.DataAccess.v18.2.UI.resources.dll" />
               </Component>
 
-              <Component Id="Component._...agram.v18.2.Core.resources.dll.2" Guid="e5f05aad-114f-4f43-9e6f-c60dce72f08a">
+              <Component Id="Component._...agram.v18.2.Core.resources.dll.2" Guid="1731873b-9202-4149-b4e8-e2bb3298fac1">
                 <File Id="_...agram.v18.2.Core.resources.dll.2" Source="PublishedFiles\ja\DevExpress.Diagram.v18.2.Core.resources.dll" />
               </Component>
 
-              <Component Id="Component._...ffice.v18.2.Core.resources.dll.2" Guid="e5f05aad-114f-4f43-9e6f-c60dd4b68065">
+              <Component Id="Component._...ffice.v18.2.Core.resources.dll.2" Guid="1731873b-9202-4149-b4e8-e2bb38dc8a9c">
                 <File Id="_...ffice.v18.2.Core.resources.dll.2" Source="PublishedFiles\ja\DevExpress.Office.v18.2.Core.resources.dll" />
               </Component>
 
-              <Component Id="Component._...s.Pdf.v18.2.Core.resources.dll.2" Guid="e5f05aad-114f-4f43-9e6f-c60d0f66a178">
+              <Component Id="Component._...s.Pdf.v18.2.Core.resources.dll.2" Guid="1731873b-9202-4149-b4e8-e2bb738cabaf">
                 <File Id="_...s.Pdf.v18.2.Core.resources.dll.2" Source="PublishedFiles\ja\DevExpress.Pdf.v18.2.Core.resources.dll" />
               </Component>
 
-              <Component Id="Component._...tGrid.v18.2.Core.resources.dll.2" Guid="e5f05aad-114f-4f43-9e6f-c60dbaf48076">
+              <Component Id="Component._...tGrid.v18.2.Core.resources.dll.2" Guid="1731873b-9202-4149-b4e8-e2bb1e1a8aad">
                 <File Id="_...tGrid.v18.2.Core.resources.dll.2" Source="PublishedFiles\ja\DevExpress.PivotGrid.v18.2.Core.resources.dll" />
               </Component>
 
-              <Component Id="Component._...nting.v18.2.Core.resources.dll.2" Guid="e5f05aad-114f-4f43-9e6f-c60da804ec9f">
+              <Component Id="Component._...nting.v18.2.Core.resources.dll.2" Guid="1731873b-9202-4149-b4e8-e2bb0c2af6d6">
                 <File Id="_...nting.v18.2.Core.resources.dll.2" Source="PublishedFiles\ja\DevExpress.Printing.v18.2.Core.resources.dll" />
               </Component>
 
-              <Component Id="Component._...hEdit.v18.2.Core.resources.dll.2" Guid="e5f05aad-114f-4f43-9e6f-c60d1e067ee7">
+              <Component Id="Component._...hEdit.v18.2.Core.resources.dll.2" Guid="1731873b-9202-4149-b4e8-e2bb822c881e">
                 <File Id="_...hEdit.v18.2.Core.resources.dll.2" Source="PublishedFiles\ja\DevExpress.RichEdit.v18.2.Core.resources.dll" />
               </Component>
 
-              <Component Id="Component._...kline.v18.2.Core.resources.dll.2" Guid="e5f05aad-114f-4f43-9e6f-c60de8c6c4f6">
+              <Component Id="Component._...kline.v18.2.Core.resources.dll.2" Guid="1731873b-9202-4149-b4e8-e2bb4cecce2d">
                 <File Id="_...kline.v18.2.Core.resources.dll.2" Source="PublishedFiles\ja\DevExpress.Sparkline.v18.2.Core.resources.dll" />
               </Component>
 
-              <Component Id="Component._...ress.Utils.v18.2.resources.dll.2" Guid="e5f05aad-114f-4f43-9e6f-c60ddbfc0bf2">
+              <Component Id="Component._...ress.Utils.v18.2.resources.dll.2" Guid="1731873b-9202-4149-b4e8-e2bb3f221529">
                 <File Id="_...ress.Utils.v18.2.resources.dll.2" Source="PublishedFiles\ja\DevExpress.Utils.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...s.Utils.v18.2.UI.resources.dll.2" Guid="e5f05aad-114f-4f43-9e6f-c60d31a49eeb">
+              <Component Id="Component._...s.Utils.v18.2.UI.resources.dll.2" Guid="1731873b-9202-4149-b4e8-e2bb95caa822">
                 <File Id="_...s.Utils.v18.2.UI.resources.dll.2" Source="PublishedFiles\ja\DevExpress.Utils.v18.2.UI.resources.dll" />
               </Component>
 
-              <Component Id="Component._...xpress.Xpo.v18.2.resources.dll.2" Guid="e5f05aad-114f-4f43-9e6f-c60d8f01990d">
+              <Component Id="Component._...xpress.Xpo.v18.2.resources.dll.2" Guid="1731873b-9202-4149-b4e8-e2bbf327a344">
                 <File Id="_...xpress.Xpo.v18.2.resources.dll.2" Source="PublishedFiles\ja\DevExpress.Xpo.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...s.XtraBars.v18.2.resources.dll.2" Guid="e5f05aad-114f-4f43-9e6f-c60d172946f7">
+              <Component Id="Component._...s.XtraBars.v18.2.resources.dll.2" Guid="1731873b-9202-4149-b4e8-e2bb7b4f502e">
                 <File Id="_...s.XtraBars.v18.2.resources.dll.2" Source="PublishedFiles\ja\DevExpress.XtraBars.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...XtraCharts.v18.2.resources.dll.2" Guid="e5f05aad-114f-4f43-9e6f-c60daf814433">
+              <Component Id="Component._...XtraCharts.v18.2.resources.dll.2" Guid="1731873b-9202-4149-b4e8-e2bb13a74e6a">
                 <File Id="_...XtraCharts.v18.2.resources.dll.2" Source="PublishedFiles\ja\DevExpress.XtraCharts.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...rts.v18.2.Wizard.resources.dll.2" Guid="e5f05aad-114f-4f43-9e6f-c60dad8d1edb">
+              <Component Id="Component._...rts.v18.2.Wizard.resources.dll.2" Guid="1731873b-9202-4149-b4e8-e2bb11b32812">
                 <File Id="_...rts.v18.2.Wizard.resources.dll.2" Source="PublishedFiles\ja\DevExpress.XtraCharts.v18.2.Wizard.resources.dll" />
               </Component>
 
-              <Component Id="Component._...traEditors.v18.2.resources.dll.2" Guid="e5f05aad-114f-4f43-9e6f-c60dde812231">
+              <Component Id="Component._...traEditors.v18.2.resources.dll.2" Guid="1731873b-9202-4149-b4e8-e2bb42a72c68">
                 <File Id="_...traEditors.v18.2.resources.dll.2" Source="PublishedFiles\ja\DevExpress.XtraEditors.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...auges.v18.2.Core.resources.dll.2" Guid="e5f05aad-114f-4f43-9e6f-c60d47e3d037">
+              <Component Id="Component._...auges.v18.2.Core.resources.dll.2" Guid="1731873b-9202-4149-b4e8-e2bbab09da6e">
                 <File Id="_...auges.v18.2.Core.resources.dll.2" Source="PublishedFiles\ja\DevExpress.XtraGauges.v18.2.Core.resources.dll" />
               </Component>
 
-              <Component Id="Component._...s.XtraGrid.v18.2.resources.dll.2" Guid="e5f05aad-114f-4f43-9e6f-c60dc667566c">
+              <Component Id="Component._...s.XtraGrid.v18.2.resources.dll.2" Guid="1731873b-9202-4149-b4e8-e2bb2a8d60a3">
                 <File Id="_...s.XtraGrid.v18.2.resources.dll.2" Source="PublishedFiles\ja\DevExpress.XtraGrid.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...XtraLayout.v18.2.resources.dll.2" Guid="e5f05aad-114f-4f43-9e6f-c60d64cab6ab">
+              <Component Id="Component._...XtraLayout.v18.2.resources.dll.2" Guid="1731873b-9202-4149-b4e8-e2bbc8f0c0e2">
                 <File Id="_...XtraLayout.v18.2.resources.dll.2" Source="PublishedFiles\ja\DevExpress.XtraLayout.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...XtraNavBar.v18.2.resources.dll.2" Guid="e5f05aad-114f-4f43-9e6f-c60dbf1fd2e9">
+              <Component Id="Component._...XtraNavBar.v18.2.resources.dll.2" Guid="1731873b-9202-4149-b4e8-e2bb2345dc20">
                 <File Id="_...XtraNavBar.v18.2.resources.dll.2" Source="PublishedFiles\ja\DevExpress.XtraNavBar.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...aPivotGrid.v18.2.resources.dll.2" Guid="e5f05aad-114f-4f43-9e6f-c60d5a413f13">
+              <Component Id="Component._...aPivotGrid.v18.2.resources.dll.2" Guid="1731873b-9202-4149-b4e8-e2bbbe67494a">
                 <File Id="_...aPivotGrid.v18.2.resources.dll.2" Source="PublishedFiles\ja\DevExpress.XtraPivotGrid.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...raPrinting.v18.2.resources.dll.2" Guid="e5f05aad-114f-4f43-9e6f-c60d687bd08c">
+              <Component Id="Component._...raPrinting.v18.2.resources.dll.2" Guid="1731873b-9202-4149-b4e8-e2bbcca1dac3">
                 <File Id="_...raPrinting.v18.2.resources.dll.2" Source="PublishedFiles\ja\DevExpress.XtraPrinting.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...v18.2.Extensions.resources.dll.2" Guid="e5f05aad-114f-4f43-9e6f-c60dae811849">
+              <Component Id="Component._...v18.2.Extensions.resources.dll.2" Guid="1731873b-9202-4149-b4e8-e2bb12a72280">
                 <File Id="_...v18.2.Extensions.resources.dll.2" Source="PublishedFiles\ja\DevExpress.XtraReports.v18.2.Extensions.resources.dll" />
               </Component>
 
-              <Component Id="Component._...traReports.v18.2.resources.dll.2" Guid="e5f05aad-114f-4f43-9e6f-c60dc4273c5e">
+              <Component Id="Component._...traReports.v18.2.resources.dll.2" Guid="1731873b-9202-4149-b4e8-e2bb284d4695">
                 <File Id="_...traReports.v18.2.resources.dll.2" Source="PublishedFiles\ja\DevExpress.XtraReports.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...raRichEdit.v18.2.resources.dll.2" Guid="e5f05aad-114f-4f43-9e6f-c60d36321b64">
+              <Component Id="Component._...raRichEdit.v18.2.resources.dll.2" Guid="1731873b-9202-4149-b4e8-e2bb9a58259b">
                 <File Id="_...raRichEdit.v18.2.resources.dll.2" Source="PublishedFiles\ja\DevExpress.XtraRichEdit.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...raTreeList.v18.2.resources.dll.2" Guid="e5f05aad-114f-4f43-9e6f-c60d2e4e60b0">
+              <Component Id="Component._...raTreeList.v18.2.resources.dll.2" Guid="1731873b-9202-4149-b4e8-e2bb92746ae7">
                 <File Id="_...raTreeList.v18.2.resources.dll.2" Source="PublishedFiles\ja\DevExpress.XtraTreeList.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...rticalGrid.v18.2.resources.dll.2" Guid="e5f05aad-114f-4f43-9e6f-c60d41b17425">
+              <Component Id="Component._...rticalGrid.v18.2.resources.dll.2" Guid="1731873b-9202-4149-b4e8-e2bba5d77e5c">
                 <File Id="_...rticalGrid.v18.2.resources.dll.2" Source="PublishedFiles\ja\DevExpress.XtraVerticalGrid.v18.2.resources.dll" />
               </Component>
 
@@ -556,115 +564,115 @@
 
             <Directory Id="INSTALLDIR.ru" Name="ru">
 
-              <Component Id="Component._...press.Data.v18.2.resources.dll.3" Guid="e5f05aad-114f-4f43-9e6f-c60d14d5d612">
+              <Component Id="Component._...press.Data.v18.2.resources.dll.3" Guid="1731873b-9202-4149-b4e8-e2bb78fbe049">
                 <File Id="_...press.Data.v18.2.resources.dll.3" Source="PublishedFiles\ru\DevExpress.Data.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...DataAccess.v18.2.resources.dll.3" Guid="e5f05aad-114f-4f43-9e6f-c60d9c51d44e">
+              <Component Id="Component._...DataAccess.v18.2.resources.dll.3" Guid="1731873b-9202-4149-b4e8-e2bb0077de85">
                 <File Id="_...DataAccess.v18.2.resources.dll.3" Source="PublishedFiles\ru\DevExpress.DataAccess.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...aAccess.v18.2.UI.resources.dll.3" Guid="e5f05aad-114f-4f43-9e6f-c60d3ff90014">
+              <Component Id="Component._...aAccess.v18.2.UI.resources.dll.3" Guid="1731873b-9202-4149-b4e8-e2bba31f0a4b">
                 <File Id="_...aAccess.v18.2.UI.resources.dll.3" Source="PublishedFiles\ru\DevExpress.DataAccess.v18.2.UI.resources.dll" />
               </Component>
 
-              <Component Id="Component._...agram.v18.2.Core.resources.dll.3" Guid="e5f05aad-114f-4f43-9e6f-c60dce73f08a">
+              <Component Id="Component._...agram.v18.2.Core.resources.dll.3" Guid="1731873b-9202-4149-b4e8-e2bb3299fac1">
                 <File Id="_...agram.v18.2.Core.resources.dll.3" Source="PublishedFiles\ru\DevExpress.Diagram.v18.2.Core.resources.dll" />
               </Component>
 
-              <Component Id="Component._...ffice.v18.2.Core.resources.dll.3" Guid="e5f05aad-114f-4f43-9e6f-c60dd4b58065">
+              <Component Id="Component._...ffice.v18.2.Core.resources.dll.3" Guid="1731873b-9202-4149-b4e8-e2bb38db8a9c">
                 <File Id="_...ffice.v18.2.Core.resources.dll.3" Source="PublishedFiles\ru\DevExpress.Office.v18.2.Core.resources.dll" />
               </Component>
 
-              <Component Id="Component._...s.Pdf.v18.2.Core.resources.dll.3" Guid="e5f05aad-114f-4f43-9e6f-c60d0f67a178">
+              <Component Id="Component._...s.Pdf.v18.2.Core.resources.dll.3" Guid="1731873b-9202-4149-b4e8-e2bb738dabaf">
                 <File Id="_...s.Pdf.v18.2.Core.resources.dll.3" Source="PublishedFiles\ru\DevExpress.Pdf.v18.2.Core.resources.dll" />
               </Component>
 
-              <Component Id="Component._...tGrid.v18.2.Core.resources.dll.3" Guid="e5f05aad-114f-4f43-9e6f-c60dbaf38076">
+              <Component Id="Component._...tGrid.v18.2.Core.resources.dll.3" Guid="1731873b-9202-4149-b4e8-e2bb1e198aad">
                 <File Id="_...tGrid.v18.2.Core.resources.dll.3" Source="PublishedFiles\ru\DevExpress.PivotGrid.v18.2.Core.resources.dll" />
               </Component>
 
-              <Component Id="Component._...nting.v18.2.Core.resources.dll.3" Guid="e5f05aad-114f-4f43-9e6f-c60da805ec9f">
+              <Component Id="Component._...nting.v18.2.Core.resources.dll.3" Guid="1731873b-9202-4149-b4e8-e2bb0c2bf6d6">
                 <File Id="_...nting.v18.2.Core.resources.dll.3" Source="PublishedFiles\ru\DevExpress.Printing.v18.2.Core.resources.dll" />
               </Component>
 
-              <Component Id="Component._...hEdit.v18.2.Core.resources.dll.3" Guid="e5f05aad-114f-4f43-9e6f-c60d1e057ee7">
+              <Component Id="Component._...hEdit.v18.2.Core.resources.dll.3" Guid="1731873b-9202-4149-b4e8-e2bb822b881e">
                 <File Id="_...hEdit.v18.2.Core.resources.dll.3" Source="PublishedFiles\ru\DevExpress.RichEdit.v18.2.Core.resources.dll" />
               </Component>
 
-              <Component Id="Component._...kline.v18.2.Core.resources.dll.3" Guid="e5f05aad-114f-4f43-9e6f-c60de8c7c4f6">
+              <Component Id="Component._...kline.v18.2.Core.resources.dll.3" Guid="1731873b-9202-4149-b4e8-e2bb4cedce2d">
                 <File Id="_...kline.v18.2.Core.resources.dll.3" Source="PublishedFiles\ru\DevExpress.Sparkline.v18.2.Core.resources.dll" />
               </Component>
 
-              <Component Id="Component._...ress.Utils.v18.2.resources.dll.3" Guid="e5f05aad-114f-4f43-9e6f-c60ddbfb0bf2">
+              <Component Id="Component._...ress.Utils.v18.2.resources.dll.3" Guid="1731873b-9202-4149-b4e8-e2bb3f211529">
                 <File Id="_...ress.Utils.v18.2.resources.dll.3" Source="PublishedFiles\ru\DevExpress.Utils.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...s.Utils.v18.2.UI.resources.dll.3" Guid="e5f05aad-114f-4f43-9e6f-c60d31a59eeb">
+              <Component Id="Component._...s.Utils.v18.2.UI.resources.dll.3" Guid="1731873b-9202-4149-b4e8-e2bb95cba822">
                 <File Id="_...s.Utils.v18.2.UI.resources.dll.3" Source="PublishedFiles\ru\DevExpress.Utils.v18.2.UI.resources.dll" />
               </Component>
 
-              <Component Id="Component._...xpress.Xpo.v18.2.resources.dll.3" Guid="e5f05aad-114f-4f43-9e6f-c60d8f02990d">
+              <Component Id="Component._...xpress.Xpo.v18.2.resources.dll.3" Guid="1731873b-9202-4149-b4e8-e2bbf328a344">
                 <File Id="_...xpress.Xpo.v18.2.resources.dll.3" Source="PublishedFiles\ru\DevExpress.Xpo.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...s.XtraBars.v18.2.resources.dll.3" Guid="e5f05aad-114f-4f43-9e6f-c60d172846f7">
+              <Component Id="Component._...s.XtraBars.v18.2.resources.dll.3" Guid="1731873b-9202-4149-b4e8-e2bb7b4e502e">
                 <File Id="_...s.XtraBars.v18.2.resources.dll.3" Source="PublishedFiles\ru\DevExpress.XtraBars.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...XtraCharts.v18.2.resources.dll.3" Guid="e5f05aad-114f-4f43-9e6f-c60daf824433">
+              <Component Id="Component._...XtraCharts.v18.2.resources.dll.3" Guid="1731873b-9202-4149-b4e8-e2bb13a84e6a">
                 <File Id="_...XtraCharts.v18.2.resources.dll.3" Source="PublishedFiles\ru\DevExpress.XtraCharts.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...rts.v18.2.Wizard.resources.dll.3" Guid="e5f05aad-114f-4f43-9e6f-c60dad8e1edb">
+              <Component Id="Component._...rts.v18.2.Wizard.resources.dll.3" Guid="1731873b-9202-4149-b4e8-e2bb11b42812">
                 <File Id="_...rts.v18.2.Wizard.resources.dll.3" Source="PublishedFiles\ru\DevExpress.XtraCharts.v18.2.Wizard.resources.dll" />
               </Component>
 
-              <Component Id="Component._...traEditors.v18.2.resources.dll.3" Guid="e5f05aad-114f-4f43-9e6f-c60dde822231">
+              <Component Id="Component._...traEditors.v18.2.resources.dll.3" Guid="1731873b-9202-4149-b4e8-e2bb42a82c68">
                 <File Id="_...traEditors.v18.2.resources.dll.3" Source="PublishedFiles\ru\DevExpress.XtraEditors.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...auges.v18.2.Core.resources.dll.3" Guid="e5f05aad-114f-4f43-9e6f-c60d47e4d037">
+              <Component Id="Component._...auges.v18.2.Core.resources.dll.3" Guid="1731873b-9202-4149-b4e8-e2bbab0ada6e">
                 <File Id="_...auges.v18.2.Core.resources.dll.3" Source="PublishedFiles\ru\DevExpress.XtraGauges.v18.2.Core.resources.dll" />
               </Component>
 
-              <Component Id="Component._...s.XtraGrid.v18.2.resources.dll.3" Guid="e5f05aad-114f-4f43-9e6f-c60dc666566c">
+              <Component Id="Component._...s.XtraGrid.v18.2.resources.dll.3" Guid="1731873b-9202-4149-b4e8-e2bb2a8c60a3">
                 <File Id="_...s.XtraGrid.v18.2.resources.dll.3" Source="PublishedFiles\ru\DevExpress.XtraGrid.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...XtraLayout.v18.2.resources.dll.3" Guid="e5f05aad-114f-4f43-9e6f-c60d64c9b6ab">
+              <Component Id="Component._...XtraLayout.v18.2.resources.dll.3" Guid="1731873b-9202-4149-b4e8-e2bbc8efc0e2">
                 <File Id="_...XtraLayout.v18.2.resources.dll.3" Source="PublishedFiles\ru\DevExpress.XtraLayout.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...XtraNavBar.v18.2.resources.dll.3" Guid="e5f05aad-114f-4f43-9e6f-c60dbf20d2e9">
+              <Component Id="Component._...XtraNavBar.v18.2.resources.dll.3" Guid="1731873b-9202-4149-b4e8-e2bb2346dc20">
                 <File Id="_...XtraNavBar.v18.2.resources.dll.3" Source="PublishedFiles\ru\DevExpress.XtraNavBar.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...aPivotGrid.v18.2.resources.dll.3" Guid="e5f05aad-114f-4f43-9e6f-c60d5a403f13">
+              <Component Id="Component._...aPivotGrid.v18.2.resources.dll.3" Guid="1731873b-9202-4149-b4e8-e2bbbe66494a">
                 <File Id="_...aPivotGrid.v18.2.resources.dll.3" Source="PublishedFiles\ru\DevExpress.XtraPivotGrid.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...raPrinting.v18.2.resources.dll.3" Guid="e5f05aad-114f-4f43-9e6f-c60d687cd08c">
+              <Component Id="Component._...raPrinting.v18.2.resources.dll.3" Guid="1731873b-9202-4149-b4e8-e2bbcca2dac3">
                 <File Id="_...raPrinting.v18.2.resources.dll.3" Source="PublishedFiles\ru\DevExpress.XtraPrinting.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...v18.2.Extensions.resources.dll.3" Guid="e5f05aad-114f-4f43-9e6f-c60dae821849">
+              <Component Id="Component._...v18.2.Extensions.resources.dll.3" Guid="1731873b-9202-4149-b4e8-e2bb12a82280">
                 <File Id="_...v18.2.Extensions.resources.dll.3" Source="PublishedFiles\ru\DevExpress.XtraReports.v18.2.Extensions.resources.dll" />
               </Component>
 
-              <Component Id="Component._...traReports.v18.2.resources.dll.3" Guid="e5f05aad-114f-4f43-9e6f-c60dc4263c5e">
+              <Component Id="Component._...traReports.v18.2.resources.dll.3" Guid="1731873b-9202-4149-b4e8-e2bb284c4695">
                 <File Id="_...traReports.v18.2.resources.dll.3" Source="PublishedFiles\ru\DevExpress.XtraReports.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...raRichEdit.v18.2.resources.dll.3" Guid="e5f05aad-114f-4f43-9e6f-c60d36331b64">
+              <Component Id="Component._...raRichEdit.v18.2.resources.dll.3" Guid="1731873b-9202-4149-b4e8-e2bb9a59259b">
                 <File Id="_...raRichEdit.v18.2.resources.dll.3" Source="PublishedFiles\ru\DevExpress.XtraRichEdit.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...raTreeList.v18.2.resources.dll.3" Guid="e5f05aad-114f-4f43-9e6f-c60d2e4f60b0">
+              <Component Id="Component._...raTreeList.v18.2.resources.dll.3" Guid="1731873b-9202-4149-b4e8-e2bb92756ae7">
                 <File Id="_...raTreeList.v18.2.resources.dll.3" Source="PublishedFiles\ru\DevExpress.XtraTreeList.v18.2.resources.dll" />
               </Component>
 
-              <Component Id="Component._...rticalGrid.v18.2.resources.dll.3" Guid="e5f05aad-114f-4f43-9e6f-c60d41b27425">
+              <Component Id="Component._...rticalGrid.v18.2.resources.dll.3" Guid="1731873b-9202-4149-b4e8-e2bba5d87e5c">
                 <File Id="_...rticalGrid.v18.2.resources.dll.3" Source="PublishedFiles\ru\DevExpress.XtraVerticalGrid.v18.2.resources.dll" />
               </Component>
 
@@ -676,7 +684,7 @@
       <Directory Id="ProgramMenuFolder" Name="ProgramMenuFolder">
         <Directory Id="ProgramMenuFolder.Lifecodes" Name="Lifecodes">
 
-          <Component Id="Lifecodes.EmptyDirectory" Guid="e5f05aad-114f-4f43-9e6f-c60d62332485">
+          <Component Id="Lifecodes.EmptyDirectory" Guid="1731873b-9202-4149-b4e8-e2bbc6592ebc">
             <CreateFolder />
             <RemoveFolder Id="ProgramMenuFolder.Lifecodes" On="uninstall" />
 
@@ -690,7 +698,7 @@
 
       <Directory Id="DesktopFolder" Name="DesktopFolder">
 
-        <Component Id="DesktopFolder.EmptyDirectory" Guid="e5f05aad-114f-4f43-9e6f-c60d057dd194">
+        <Component Id="DesktopFolder.EmptyDirectory" Guid="1731873b-9202-4149-b4e8-e2bb69a3dbcb">
           <CreateFolder />
 
           <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
@@ -700,7 +708,7 @@
 
       </Directory>
 
-      <Component Id="TARGETDIR" Guid="e5f05aad-114f-4f43-9e6f-c60d9a66699d" KeyPath="yes">
+      <Component Id="TARGETDIR" Guid="1731873b-9202-4149-b4e8-e2bbfe8c73d4" KeyPath="yes">
         <CreateFolder />
         <RemoveFolder Id="TARGETDIR" On="uninstall" />
       </Component>
@@ -762,8 +770,10 @@
       <ComponentRef Id="Component.Microsoft.Practices.Unity.dll" />
       <ComponentRef Id="Component.Newtonsoft.Json.dll" />
       <ComponentRef Id="Component.RushDAL.dll" />
+      <ComponentRef Id="Component.RushDAL.dll.config" />
       <ComponentRef Id="Component.RUSHSettings.xml" />
       <ComponentRef Id="Component.RushViewModel.dll" />
+      <ComponentRef Id="Component.RushViewModel.dll.config" />
       <ComponentRef Id="Component._...press.Data.v18.2.resources.dll" />
       <ComponentRef Id="Component._...DataAccess.v18.2.resources.dll" />
       <ComponentRef Id="Component._...aAccess.v18.2.UI.resources.dll" />

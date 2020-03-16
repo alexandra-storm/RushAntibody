@@ -42,7 +42,17 @@ namespace MATCHITAntibodyRushExport
                 txtmodhigh.Text = mid.Split('-')[1];
                 txtweaklow.Text = low.Split('-')[0];
                 txtweakhigh.Text = low.Split('-')[1];
-                txtunacceptable.Text = unaccept;
+                if (unaccept.Contains("-"))
+                {
+                    txtunacceptablelow.Text = unaccept.Split('-')[0];
+                    txtunacceptablehigh.Text = unaccept.Split('-')[1];
+                }
+                else
+                {
+                    txtunacceptablelow.Text = unaccept;
+                    txtunacceptablehigh.Text = unaccept;
+                }
+               
             }
             catch
             {
@@ -62,7 +72,7 @@ namespace MATCHITAntibodyRushExport
                 nodes.Item(0).SelectSingleNode("highrange").InnerText = txtStrong.Text;
                 nodes.Item(0).SelectSingleNode("midrange").InnerText = $"{txtmodlow.Text}-{txtmodhigh.Text}";
                 nodes.Item(0).SelectSingleNode("lowrange").InnerText = $"{txtweaklow.Text}-{txtweakhigh.Text}";
-                nodes.Item(0).SelectSingleNode("unacceptable").InnerText = txtunacceptable.Text;
+                nodes.Item(0).SelectSingleNode("unacceptable").InnerText = $"{txtunacceptablelow.Text}-{txtunacceptablehigh.Text}";
                 doc.Save(filename);
             }
             catch
@@ -88,7 +98,7 @@ namespace MATCHITAntibodyRushExport
                 node.AppendChild(lowrange);
                 lowrange.InnerText = "700-2000";
                 node.AppendChild(unacceptable);
-                unacceptable.InnerText = "3500";
+                unacceptable.InnerText = "3500-5000";
                 //save back
                 doc.Save(filename);
             }

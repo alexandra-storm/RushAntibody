@@ -4,5 +4,5 @@
   <highrange>5000</highrange>
   <midrange>2000-5000</midrange>
   <lowrange>700-2000</lowrange>
-  <unacceptable>3500</unacceptable>
+  <unacceptable>3500-5000</unacceptable>
 </Settings>

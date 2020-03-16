@@ -15,6 +15,7 @@ namespace RushViewModel
     {
         public string sessionid { get; set; }
         public string sampleid { get; set; }
+        public string welllocation { get; set; }
         public string classtype { get; set; }
         public DataSet reportDS { get; set; }
         public ReportData reportdb { get; set; }
@@ -60,8 +61,9 @@ namespace RushViewModel
             int midhigh = int.Parse(midRange.Split('-')[1]);
             int lowlow = int.Parse(lowRange.Split('-')[0]);
             int lowhight = int.Parse(lowRange.Split('-')[1]);
-            int unacceptablelow = int.Parse(unacceptable);
-
+            int unacceptablelow = int.Parse(unacceptable.Split('-')[0]);
+            int unacceptablehigh = int.Parse(unacceptable.Split('-')[1]);
+            welllocation = reportDS.Tables[6].Rows[0]["wellLocation"].ToString();
             //columns rawValue, assignment, Serology,AlleleColA, AlleleColB, AlleleColC, AlleleBw,AlleleDRCol, AlleleDQACol, AlleleDQBCol, 
             //AlleleDPACol, AlleleDPBCol, A_AlleleSortOrder, A_serologySortOrder
             //B_AlleleSortOrder, B_SerologySortOrder, C_AlleleSortOrder, C_SerologySortOrder
@@ -195,7 +197,7 @@ namespace RushViewModel
                     {
                         reportdb.WeakSerology.Add(s);
                     }
-                    if (finalsero >= unacceptablelow)
+                    if (finalsero >= unacceptablelow && finalsero <= unacceptablehigh)
                     {
                         reportdb.UnacceptableSerology.Add(s);
                     }
@@ -229,7 +231,7 @@ namespace RushViewModel
                         }
                         if((a == "Bw4" || a == "Bw6"))
                         {
-                            if (finalallele >= unacceptablelow)
+                            if (finalallele >= unacceptablelow && finalallele <= unacceptablehigh)
                             {
                                 reportdb.UnacceptableSerology.Add(a);
                             }
@@ -447,12 +449,15 @@ namespace RushViewModel
             int midhigh = int.Parse(midRange.Split('-')[1]);
             int lowlow = int.Parse(lowRange.Split('-')[0]);
             int lowhight = int.Parse(lowRange.Split('-')[1]);
-            int unacceptablelow = int.Parse(unacceptable);
+            int unacceptablelow = int.Parse(unacceptable.Split('-')[0]);
+            int unacceptablehigh = int.Parse(unacceptable.Split('-')[1]);
             Dictionary<string, List<decimal>> seroValuePairs = new Dictionary<string, List<decimal>>();
             Dictionary<string, List<decimal>> allValuePairs = new Dictionary<string, List<decimal>>();
             var pos = (from item in reportDS.Tables[1].AsEnumerable() where decimal.Parse(item["PctPositive"].ToString()) == 100m select item).ToList();
-            
-            foreach(DataRow row in pos)
+            reportdb.SampleID = sampleid;
+            reportdb.SerumDate = DateTime.Parse(reportDS.Tables[6].Rows[0]["rundate"].ToString()).ToString("MM/dd/yyyy");
+
+            foreach (DataRow row in pos)
             {
                 var rawValueRows = (from raw in reportDS.Tables[0].AsEnumerable()
                                     where
@@ -465,8 +470,6 @@ namespace RushViewModel
                 decimal avgRawValue = 0m;
                 List<decimal> tmp = new List<decimal>();
                 string finS = string.Empty;
-                reportdb.SampleID = sampleid;
-                reportdb.SerumDate = DateTime.Parse(reportDS.Tables[6].Rows[0]["rundate"].ToString()).ToString("MM/dd/yyyy");
                 foreach (DataRow data in rawValueRows)
                 {
                     switch (row["Antigen"].ToString().Substring(0, 3))
@@ -481,7 +484,16 @@ namespace RushViewModel
                                                 && i["assignment"].ToString() == "Negative"
                                                select i).Any();
                                 if (seroPOS)
+                                {
                                     finS = row["Antigen"].ToString();
+                                    if(finS.Contains("DRB3*"))
+                                    {
+                                        finS = $"{finS}(52)";
+                                    }else if (finS.Contains("DRB5*"))
+                                    {
+                                        finS = $"{finS}(51)";
+                                    }
+                                }
                                 else
                                     finS = data["AlleleDRSerology"].ToString().Length != 0 ? data["AlleleDRSerology"].ToString() : row["Antigen"].ToString();
                             }
@@ -530,7 +542,8 @@ namespace RushViewModel
                     tmp.Add(decimal.Parse(data["rawValue"].ToString()));
                 }
                 avgRawValue = tmp.Average();
-                string finalSero = finS.Contains("(") ? finS.Split('(')[0] : finS;
+
+                string finalSero = finS.Contains("(") && (!finS.Contains("DRB3*")) && (!finS.Contains("DRB5*")) ? finS.Split('(')[0] : finS;
                 if (avgRawValue > high)
                 {
                     if(!reportdb.StrongSerology.Contains(finalSero))
@@ -552,7 +565,7 @@ namespace RushViewModel
                     if(!reportdb.WeakAlleles.Contains(row["Antigen"].ToString()))
                         reportdb.WeakAlleles.Add(row["Antigen"].ToString());
                 }
-                if (avgRawValue >= unacceptablelow)
+                if (avgRawValue >= unacceptablelow && avgRawValue <= unacceptablehigh)
                 {
                     if (finalSero.StartsWith("DR"))
                     {
@@ -562,209 +575,7 @@ namespace RushViewModel
                 }
             }
 
-            //foreach (DataRow dr in reportDS.Tables[0].Rows)
-            //{
-            //   // if(pos[""])
-            //    decimal raw = decimal.Parse(dr["rawValue"].ToString());
-            //    string call = dr["assignment"].ToString();
-            //    string serology = getSerologyFromRow(dr);
-            //    string alleles = GetAlleleFromRow(dr);
-
-            //    if (serology == "DPw4")
-            //    {
-            //        serology = alleles.Split(',')[1];
-            //    }
-            //    List<string> addedSero = new List<string>();
-
-            //    if (call.ToLower() == "positive")
-            //    {
-
-            //        List<string> negList = new List<string>();
-            //        List<string> alleleList = alleles.Split(',').ToList<string>();
-            //        foreach(string item in alleleList)
-            //        {
-            //            var allelesNEG = (from neg in reportDS.Tables[0].AsEnumerable()
-            //                              where (neg["AlleleDRCol"].ToString() == item
-            //                             || neg["AlleleDPACol"].ToString() == item
-            //                             || neg["AlleleDPBCol"].ToString() == item
-            //                             || neg["AlleleDQACol"].ToString() == item
-            //                             || neg["AlleleDQBCol"].ToString() == item)
-            //                             && neg["Assignment"].ToString() == "Negative"
-            //                              select neg).Any();
-
-
-            //            if(allelesNEG) { negList.Add(item); }
-            //            else
-            //            {
-            //                //check to see if allele has serology
-            //                switch (item.Substring(0, 3))
-            //                {
-            //                    case "DRB":
-            //                        var dritem = (from dri in reportDS.Tables[0].AsEnumerable()
-            //                                     where dri["AlleleDRCol"].ToString() == item
-            //                                     select dri).FirstOrDefault();
-            //                        if(dritem["AlleleDRSerology"].ToString().Length == 0)
-            //                        {
-            //                            addedSero.Add(item);
-            //                        }
-            //                        break;
-            //                    case "DPA":
-            //                        addedSero.Add(item);
-            //                        break;
-            //                    case "DPB":
-            //                        var dritemdpb = (from dri in reportDS.Tables[0].AsEnumerable()
-            //                                        where dri["AlleleDPBCol"].ToString() == item
-            //                                        select dri).FirstOrDefault();
-            //                        if (dritemdpb["AlleleDPSerology"].ToString().Length == 0)
-            //                        {
-            //                            addedSero.Add(item);
-            //                        }
-            //                        break;
-            //                    case "DQB":
-            //                        var dritemdqb = (from dri in reportDS.Tables[0].AsEnumerable()
-            //                                         where dri["AlleleDQBCol"].ToString() == item
-            //                                         select dri).FirstOrDefault();
-            //                        if (dritemdqb["AlleleDQSerology"].ToString().Length == 0)
-            //                        {
-            //                            addedSero.Add(item);
-            //                        }
-            //                        break;
-            //                    case "DQA":
-            //                        addedSero.Add(item);
-            //                        break;
-            //                }
-            //            }
-            //        }
-
-            //        List<string> negSero = new List<string>();
-            //        List<string> serolist = serology.Split(',').ToList<string>();
-            //        foreach(string item in serolist)
-            //        {
-            //            var allelesNeg = (from neg in reportDS.Tables[0].AsEnumerable()
-            //                    where (neg["AlleleDRSerology"].ToString() == item
-            //                    || neg["AlleleDPSerology"].ToString() == item
-            //                    || neg["AlleleDQSerology"].ToString() == item)
-            //                    && neg["Assignment"].ToString() == "Negative"
-            //                     select neg).Any();
-            //            if(allelesNeg) { negSero.Add(item); }
-            //        }
-
-            //        foreach (string s in serolist)
-            //        {
-            //            if (!negSero.Contains(s))
-            //            {
-            //                if (seroValuePairs.ContainsKey(serology))
-            //                {
-            //                    seroValuePairs[serology].Add(raw);
-            //                }
-            //                else
-            //                {
-            //                    List<decimal> elem = new List<decimal>();
-            //                    elem.Add(raw);
-            //                    seroValuePairs.Add(serology, elem);
-            //                }
-            //            }
-            //        }
-                    
-            //        foreach (string i in alleleList)
-            //        {
-            //            if (!negList.Contains(i))
-            //            {
-            //                if (allValuePairs.ContainsKey(i))
-            //                {
-            //                    allValuePairs[i].Add(raw);
-            //                }
-            //                else
-            //                {
-            //                    List<decimal> elem = new List<decimal>();
-            //                    elem.Add(raw);
-            //                    allValuePairs.Add(i, elem);
-            //                }
-            //            }
-            //            if (addedSero.Contains(i))
-            //            {
-            //                List<decimal> elem = new List<decimal>();
-            //                elem.Add(raw);
-            //                string oser = i;
-            //                if (i.StartsWith("DPB"))
-            //                {
-            //                    oser = i.Split(':')[0].Replace("B1*", "");
-            //                }
-            //                if (seroValuePairs.ContainsKey(oser))
-            //                {
-            //                    seroValuePairs[oser].Add(raw);
-            //                }
-            //                else
-            //                {
-            //                    seroValuePairs.Add(oser, elem);
-            //                }
-                            
-            //            }
-            //        }
-            //    }
-            //}
-            //foreach (string s in seroValuePairs.Keys)
-            //{
-            //    decimal finalsero;
-            //    if (seroValuePairs[s].Count > 1)
-            //    {
-            //        //take the average of the values
-            //        finalsero = seroValuePairs[s].Average();
-            //    }
-            //    else
-            //    {
-            //        finalsero = seroValuePairs[s][0];
-            //    }
-            //    string finS = s.Contains("(") ? s.Split('(')[0] : s;
-            //    if (finalsero > high)
-            //    {                       
-            //        reportdb.StrongSerology.Add(finS);
-            //    }
-            //    else if (finalsero > midlow && finalsero <= midhigh)
-            //    {
-            //        reportdb.ModSerology.Add(finS);
-            //    }
-            //    else if (finalsero > lowlow && finalsero <= lowhight)
-            //    {
-            //        reportdb.WeakSerology.Add(finS);
-            //    }
-            //    if (finalsero >= unacceptablelow)
-            //    {
-            //        if (finS.StartsWith("DR"))
-            //        {
-            //            reportdb.UnacceptableSerology.Add(finS);
-            //        }
-            //    }
-            //}
-
-            //foreach (string a in allValuePairs.Keys)
-            //{
-            //    decimal finalallele;
-            //    if (a.Length > 0)
-            //    {
-            //        if (allValuePairs[a].Count > 1)
-            //        {
-            //            finalallele = allValuePairs[a].Average();
-            //        }
-            //        else
-            //        {
-            //            finalallele = allValuePairs[a][0];
-            //        }
-
-            //        if (finalallele > high)
-            //        {
-            //            reportdb.StrongAlleles.Add(a);
-            //        }
-            //        else if (finalallele > midlow && finalallele <= midhigh)
-            //        {
-            //            reportdb.ModAlleles.Add(a);
-            //        }
-            //        else if (finalallele > lowlow && finalallele <= lowhight)
-            //        {
-            //            reportdb.WeakAlleles.Add(a);
-            //        }
-            //    }
-            //}
+         
             reportdb.StrongAlleleFinal = SortAlleles(reportdb.StrongAlleles);
             reportdb.ModAllelesFinal = SortAlleles(reportdb.ModAlleles);
             reportdb.WeakAllelesFinal = SortAlleles(reportdb.WeakAlleles);

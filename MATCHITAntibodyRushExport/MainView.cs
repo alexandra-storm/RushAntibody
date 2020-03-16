@@ -51,20 +51,55 @@ namespace MATCHITAntibodyRushExport
                 {
                     pathtosave = nodes.Item(0).SelectSingleNode("reportPath").InnerText;
                 }
-               
+                if (nodes.Item(0).SelectSingleNode("highrange").InnerText.Length == 0)
+                {
+                   
+                }
             }
             catch
             {
-               
+
                 //nodes does not exist.
                 //create node and add value
-                XmlNode node = doc.CreateNode(XmlNodeType.Element, "Settings", null);
-                //create title node
-                XmlNode nodeTitle = doc.CreateElement("reportPath");
-                //add value for it
-                node.AppendChild(nodeTitle);
-                nodeTitle.InnerText = "c:\\";
-                doc.DocumentElement.AppendChild(node);
+                XmlNode node = doc.SelectSingleNode("Settings");
+                if(node == null)
+                {
+                     node = doc.CreateNode(XmlNodeType.Element, "Settings", null);
+                    XmlNode nodeTitle = doc.CreateElement("reportPath");
+                    XmlNode node1 = doc.CreateElement("highrange");
+                    node1.InnerText = "5000";
+                    node.AppendChild(node1);
+                    XmlNode node2 = doc.CreateElement("midrange");
+                    node2.InnerText = "2000-5000";
+                    node.AppendChild(node2);
+                    XmlNode node3 = doc.CreateElement("lowrange");
+                    node3.InnerText = "700-2000";
+                    node.AppendChild(node3);
+                    node.AppendChild(nodeTitle);
+                    nodeTitle.InnerText = "c:\\";
+                    XmlNode node4 = doc.CreateElement("unacceptable");
+                    node4.InnerText = "3500-5000";
+                    node.AppendChild(node4);
+                    doc.DocumentElement.AppendChild(node);
+                }
+                else
+                {
+                    //create title node
+                    XmlNode node1 = doc.CreateElement("highrange");
+                    node1.InnerText = "5000";
+                    node.AppendChild(node1);
+                    XmlNode node2 = doc.CreateElement("midrange");
+                    node2.InnerText = "2000-5000";
+                    node.AppendChild(node2);
+                    XmlNode node3 = doc.CreateElement("lowrange");
+                    node3.InnerText = "700-2000";
+                    node.AppendChild(node3);
+                    XmlNode node4 = doc.CreateElement("unacceptable");
+                    node4.InnerText = "3500-5000";
+                    node.AppendChild(node4);
+                }
+               
+                
                 //save back
                 doc.Save(fileName);
             }
@@ -298,7 +333,7 @@ namespace MATCHITAntibodyRushExport
                 objSheet.get_Range("B1", "B1").ColumnWidth = 15;
                 objSheet.Cells[1, 2] = $"Serum Date";
                 objSheet.get_Range("C1", "C1").ColumnWidth = 30;
-                objSheet.Cells[1, 3] = $"Strong MFI (>5000) Alleles";
+                objSheet.Cells[1, 3] = $"Strong MFI (5000) Alleles";
                 objSheet.get_Range("D1", "D1").ColumnWidth = 30;
                 objSheet.Cells[1, 4] = $"Mod MFI (2000-5000) Alleles";
                 objSheet.get_Range("E1", "E1").ColumnWidth = 30;
@@ -310,20 +345,21 @@ namespace MATCHITAntibodyRushExport
                 objSheet.get_Range("H1", "H1").ColumnWidth = 30;
                 objSheet.Cells[1, 8] = $"Weak MFI (700-2000) Serology";
                 objSheet.get_Range("I1", "I1").ColumnWidth = 30;
-                objSheet.Cells[1, 9] = $"A, B, DR MFI (≥ 3500) Serology";
+                objSheet.Cells[1, 9] = $"A, B, DR MFI (3500-5000) Serology";
 
                 int col = 2;
-                foreach(ReportDataVM item in samples[batch])
+                var sort = (samples[batch].OrderBy(x => x.welllocation)).ToList<ReportDataVM>();
+                foreach(ReportDataVM item in sort)
                 {
-                    objSheet.Cells[col, 1] = item.reportdb.SampleID;
-                    objSheet.Cells[col, 2] = item.reportdb.SerumDate;
-                    objSheet.Cells[col, 3] = item.reportdb.StrongAlleleFinal;
-                    objSheet.Cells[col, 4] = item.reportdb.ModAllelesFinal;
-                    objSheet.Cells[col, 5] = item.reportdb.WeakAllelesFinal;
-                    objSheet.Cells[col, 6] = item.reportdb.StrongSerologyFinal;
-                    objSheet.Cells[col, 7] = item.reportdb.ModSerologyFinal;
-                    objSheet.Cells[col, 8] = item.reportdb.WeakSerologyFinal;
-                    objSheet.Cells[col, 9] = item.reportdb.UnacceptableSeroFinal;
+                    objSheet.Cells[col, 1] = item.reportdb.SampleID.Trim().Length == 0 ? "N/A" : item.reportdb.SampleID;
+                    objSheet.Cells[col, 2] = item.reportdb.SerumDate.Trim().Length == 0 ? "N/A" : item.reportdb.SerumDate;
+                    objSheet.Cells[col, 3] = item.reportdb.StrongAlleleFinal.Trim().Length == 0 ? "N/A" : item.reportdb.StrongAlleleFinal;
+                    objSheet.Cells[col, 4] = item.reportdb.ModAllelesFinal.Trim().Length == 0 ? "N/A" : item.reportdb.ModAllelesFinal;
+                    objSheet.Cells[col, 5] = item.reportdb.WeakAllelesFinal.Trim().Length == 0 ? "N/A" : item.reportdb.WeakAllelesFinal;
+                    objSheet.Cells[col, 6] = item.reportdb.StrongSerologyFinal.Trim().Length == 0 ? "N/A" : item.reportdb.StrongSerologyFinal;
+                    objSheet.Cells[col, 7] = item.reportdb.ModSerologyFinal.Trim().Length == 0 ? "N/A" : item.reportdb.ModSerologyFinal;
+                    objSheet.Cells[col, 8] = item.reportdb.WeakSerologyFinal.Trim().Length == 0 ? "N/A" : item.reportdb.WeakSerologyFinal;
+                    objSheet.Cells[col, 9] = item.reportdb.UnacceptableSeroFinal.Trim().Length == 0 ? "N/A" : item.reportdb.UnacceptableSeroFinal;
                     string rangeval = $"A{col}:I9";
                     objSheet.Range[rangeval].Borders[Excel.XlBordersIndex.xlEdgeBottom].LineStyle = Excel.XlLineStyle.xlContinuous;
                     objSheet.Range[rangeval].Borders[Excel.XlBordersIndex.xlEdgeLeft].LineStyle = Excel.XlLineStyle.xlContinuous;
@@ -397,7 +433,7 @@ namespace MATCHITAntibodyRushExport
                 objSheet.get_Range("H1", "H1").ColumnWidth = 30;
                 objSheet.Cells[1, 8] = $"Weak MFI (700-2000) Serology";
                 objSheet.get_Range("I1", "I1").ColumnWidth = 30;
-                objSheet.Cells[1, 9] = $"A, B, DR MFI (≥ 3500) Serology";
+                objSheet.Cells[1, 9] = $"A, B, DR MFI (3500-5000) Serology";
                 objSheet.Range["A1:A9"].Style.Font.Name = "Calbri";
                 objSheet.Range["A1:A9"].Style.Font.Size = 8;
                 objSheet.Range["A1:A9"].Style.WrapText = true;
@@ -410,15 +446,18 @@ namespace MATCHITAntibodyRushExport
                 objSheet.Range["A1:I2"].Borders.Color = Color.Black;
                 objSheet.Cells[2, 1] = reportDataVM.reportdb.SampleID;
                 objSheet.Cells[2, 2] = reportDataVM.reportdb.SerumDate;
-                objSheet.Cells[2, 3] = reportDataVM.reportdb.StrongAlleleFinal;
-                objSheet.Cells[2, 4] = reportDataVM.reportdb.ModAllelesFinal;
-                objSheet.Cells[2, 5] = reportDataVM.reportdb.WeakAllelesFinal;
-                objSheet.Cells[2, 6] = reportDataVM.reportdb.StrongSerologyFinal;
-                objSheet.Cells[2, 7] = reportDataVM.reportdb.ModSerologyFinal;
-                objSheet.Cells[2, 8] = reportDataVM.reportdb.WeakSerologyFinal;
-                objSheet.Cells[2, 9] = reportDataVM.reportdb.UnacceptableSeroFinal;
-
-                wrkbook.SaveAs($"{pathtosave}\\{reportDataVM.sessionid}_{reportDataVM.sampleid}.xlsx");
+                objSheet.Cells[2, 3] = reportDataVM.reportdb.StrongAlleleFinal.Trim().Length == 0 ? "N/A" : reportDataVM.reportdb.StrongAlleleFinal;
+                objSheet.Cells[2, 4] = reportDataVM.reportdb.ModAllelesFinal.Trim().Length == 0 ? "N/A" : reportDataVM.reportdb.ModAllelesFinal;
+                objSheet.Cells[2, 5] = reportDataVM.reportdb.WeakAllelesFinal.Trim().Length == 0 ? "N/A" : reportDataVM.reportdb.WeakAllelesFinal;
+                objSheet.Cells[2, 6] = reportDataVM.reportdb.StrongSerologyFinal.Trim().Length == 0 ? "N/A" : reportDataVM.reportdb.StrongSerologyFinal; 
+                objSheet.Cells[2, 7] = reportDataVM.reportdb.ModSerologyFinal.Trim().Length == 0 ? "N/A" : reportDataVM.reportdb.ModSerologyFinal;
+                objSheet.Cells[2, 8] = reportDataVM.reportdb.WeakSerologyFinal.Trim().Length == 0 ? "N/A" : reportDataVM.reportdb.WeakSerologyFinal;
+                objSheet.Cells[2, 9] = reportDataVM.reportdb.UnacceptableSeroFinal.Trim().Length == 0 ? "N/A" : reportDataVM.reportdb.UnacceptableSeroFinal;
+                if (!pathtosave.EndsWith("\\"))
+                {
+                    pathtosave = pathtosave + "\\";
+                }
+                wrkbook.SaveAs($"{pathtosave}{reportDataVM.sessionid}_{reportDataVM.sampleid}.xlsx");
                 
 
                 appExcel.Quit();

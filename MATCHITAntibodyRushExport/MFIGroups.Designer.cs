@@ -40,15 +40,18 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.txtweaklow = new DevExpress.XtraEditors.TextEdit();
             this.txtweakhigh = new DevExpress.XtraEditors.TextEdit();
-            this.txtunacceptable = new DevExpress.XtraEditors.TextEdit();
+            this.txtunacceptablelow = new DevExpress.XtraEditors.TextEdit();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
+            this.txtunacceptablehigh = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.txtStrong.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtmodlow.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtmodhigh.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtweaklow.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtweakhigh.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtunacceptable.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtunacceptablelow.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtunacceptablehigh.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // labelControl1
@@ -97,9 +100,9 @@
             this.labelControl6.Appearance.Options.UseFont = true;
             this.labelControl6.Location = new System.Drawing.Point(12, 262);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(556, 34);
+            this.labelControl6.Size = new System.Drawing.Size(405, 34);
             this.labelControl6.TabIndex = 5;
-            this.labelControl6.Text = "Unacceptable MFI Greater Than or Equal To:";
+            this.labelControl6.Text = "Unacceptable MFI Greater Than:";
             // 
             // txtStrong
             // 
@@ -146,12 +149,12 @@
             this.txtweakhigh.Size = new System.Drawing.Size(175, 36);
             this.txtweakhigh.TabIndex = 12;
             // 
-            // txtunacceptable
+            // txtunacceptablelow
             // 
-            this.txtunacceptable.Location = new System.Drawing.Point(609, 260);
-            this.txtunacceptable.Name = "txtunacceptable";
-            this.txtunacceptable.Size = new System.Drawing.Size(175, 36);
-            this.txtunacceptable.TabIndex = 13;
+            this.txtunacceptablelow.Location = new System.Drawing.Point(442, 260);
+            this.txtunacceptablelow.Name = "txtunacceptablelow";
+            this.txtunacceptablelow.Size = new System.Drawing.Size(175, 36);
+            this.txtunacceptablelow.TabIndex = 13;
             // 
             // btnSave
             // 
@@ -171,14 +174,33 @@
             this.simpleButton1.Text = "Close";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
+            // labelControl7
+            // 
+            this.labelControl7.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.labelControl7.Appearance.Options.UseFont = true;
+            this.labelControl7.Location = new System.Drawing.Point(650, 253);
+            this.labelControl7.Name = "labelControl7";
+            this.labelControl7.Size = new System.Drawing.Size(297, 34);
+            this.labelControl7.TabIndex = 16;
+            this.labelControl7.Text = "Less Than or Equal To: ";
+            // 
+            // txtunacceptablehigh
+            // 
+            this.txtunacceptablehigh.Location = new System.Drawing.Point(975, 256);
+            this.txtunacceptablehigh.Name = "txtunacceptablehigh";
+            this.txtunacceptablehigh.Size = new System.Drawing.Size(175, 36);
+            this.txtunacceptablehigh.TabIndex = 17;
+            // 
             // MFIGroups
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1179, 393);
+            this.Controls.Add(this.txtunacceptablehigh);
+            this.Controls.Add(this.labelControl7);
             this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.txtunacceptable);
+            this.Controls.Add(this.txtunacceptablelow);
             this.Controls.Add(this.txtweakhigh);
             this.Controls.Add(this.txtweaklow);
             this.Controls.Add(this.labelControl2);
@@ -199,7 +221,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtmodhigh.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtweaklow.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtweakhigh.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtunacceptable.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtunacceptablelow.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtunacceptablehigh.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -218,8 +241,10 @@
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.TextEdit txtweaklow;
         private DevExpress.XtraEditors.TextEdit txtweakhigh;
-        private DevExpress.XtraEditors.TextEdit txtunacceptable;
+        private DevExpress.XtraEditors.TextEdit txtunacceptablelow;
         private DevExpress.XtraEditors.SimpleButton btnSave;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.LabelControl labelControl7;
+        private DevExpress.XtraEditors.TextEdit txtunacceptablehigh;
     }
 }
